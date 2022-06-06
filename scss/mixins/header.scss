@@ -1,0 +1,87 @@
+@mixin header() {
+  header {
+    width: 100%;
+    min-height: 95px;
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 54px;
+
+      .logo {
+        display: flex;
+
+        img {
+          width: 18px;
+          margin-right: 14.47px;
+
+        }
+        h2 {
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 1.6px;
+          text-transform: uppercase;
+          color: $black;
+        }
+      }
+      .menu {
+        ul {
+          display: flex;
+          li {
+            align-items: center;
+            margin-right: 24px;
+            a {
+              font-family: 'Raleway';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 140%;
+              letter-spacing: 0.32px;
+              color: $black;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .call {
+        display: flex;
+        align-items: center;
+        a {
+          display: block;
+          width: 14.45px;
+          height: 17px;
+          background-image: url("../../image/telephone 1.svg");
+          background-repeat: no-repeat;
+          margin-right: 15.55px;
+          line-height: 140%;
+        }
+        p {
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 140%;
+          letter-spacing: 0.32px;
+          color: $black;
+        }
+      }
+      .buy {
+        display: block;
+        width: 24px;
+        height: 23.54px;
+        background-image: url("../../image/buy.svg");
+        background-repeat: no-repeat;
+      }
+
+    }
+  }
+}
+
