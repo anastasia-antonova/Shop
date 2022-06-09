@@ -59,6 +59,83 @@ table {
   margin: 0 auto;
 }
 
+.buttons1 {
+  border: none;
+  background-color: #6E9C9F;
+  padding: 22px 50px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 138.9%;
+  text-align: center;
+  letter-spacing: 0.32px;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 126px;
+}
+.buttons1:hover {
+  background-color: #509498;
+}
+
+.buttons2 {
+  background-color: #FFFFFF;
+  padding: 22px 50px;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #6E9C9F;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 138.9%;
+  text-align: center;
+  letter-spacing: 0.32px;
+  color: #6E9C9F;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+.buttons2:hover {
+  border: none;
+  background-color: #6E9C9F;
+  padding: 22px 50px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 138.9%;
+  text-align: center;
+  letter-spacing: 0.32px;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 126px;
+}
+
+.title-h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 110%;
+  letter-spacing: 0.32px;
+  color: #000000;
+  margin-top: 145px;
+  margin-bottom: 45px;
+  max-width: 585px;
+}
+
+.title-h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: 0.32px;
+  color: #000000;
+  margin-bottom: 92px;
+}
+
 body {
   padding-top: 96px;
 }
@@ -73,7 +150,7 @@ body header {
 body header .content {
   display: flex;
   justify-content: space-between;
-  margin-top: 54px;
+  margin-top: 39px;
 }
 body header .content .logo {
   display: flex;
@@ -138,7 +215,14 @@ body header .content .buy {
   background-image: url("../../image/buy.svg");
   background-repeat: no-repeat;
 }
-body .banner .left h1 {
+body .banner {
+  display: flex;
+  margin-bottom: 130px;
+}
+body .banner .left {
+  width: 50%;
+}
+body .banner .left .title-h1 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
@@ -146,6 +230,182 @@ body .banner .left h1 {
   line-height: 110%;
   letter-spacing: 0.32px;
   color: #000000;
+  margin-top: 145px;
+  margin-bottom: 45px;
+  max-width: 585px;
+}
+body .banner .left .text-cont {
+  max-width: 385px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body .banner .left .text-cont p {
+  max-width: 385px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: right;
+  letter-spacing: 0.32px;
+  color: #000000;
+  margin-bottom: 54px;
+}
+body .banner .left .text-cont .buttons1 {
+  border: none;
+  background-color: #6E9C9F;
+  padding: 22px 50px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 138.9%;
+  text-align: center;
+  letter-spacing: 0.32px;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 126px;
+}
+body .banner .left .text-cont .buttons1:hover {
+  background-color: #509498;
+}
+body .banner .left .text-cont .pagination-controler .pag-item {
+  width: 30px;
+  height: 4px;
+  background-color: #D1D1D1;
+  border: none;
+  margin-left: 12px;
+}
+body .banner .left .text-cont .pagination-controler .pag-item.active {
+  background-color: #000000;
+}
+body .banner .right {
+  width: 50%;
+  min-height: 731px;
+  position: relative;
+}
+body .banner .right::after {
+  content: "";
+  width: 197px;
+  height: 197px;
+  position: absolute;
+  background-image: url("../image/ionut-comanici-RDcEWH5hSDE-unsplash 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 123px;
+  left: 456px;
+}
+body .banner .right::before {
+  content: "";
+  width: 190px;
+  height: 318px;
+  position: absolute;
+  background-image: url("../image/allef-vinicius-YG97wpX0OEg-unsplash 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 391px;
+  left: -12px;
+}
+body .banner .right .banner-img {
+  width: 434px;
+  height: 652px;
+  margin-left: 115px;
+}
+body .new-colection .title-h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: 0.32px;
+  color: #000000;
+  margin-bottom: 92px;
+}
+body .new-colection .scroll-3img {
+  display: flex;
+  justify-content: space-between;
+}
+body .new-colection .scroll-3img .card {
+  margin-bottom: 65px;
+}
+body .new-colection .scroll-3img .card .parametr {
+  width: 350px;
+  height: 478px;
+  background-size: 350px;
+  background-repeat: no-repeat;
+}
+body .new-colection .scroll-3img .card .image-collection1 {
+  background-image: url("../image/img1.png");
+}
+body .new-colection .scroll-3img .card .image-collection2 {
+  background-image: url("../image/img2.png");
+}
+body .new-colection .scroll-3img .card .image-collection3 {
+  background-image: url("../image/img3.png");
+}
+body .new-colection .scroll-3img .card .image-collection3 .name {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 7px;
+}
+body .new-colection .scroll-3img .card .image-collection3 .sale {
+  display: block;
+  margin-left: 47px;
+  position: relative;
+}
+body .new-colection .scroll-3img .card .image-collection3 .sale span {
+  margin-right: 16px;
+  text-decoration: line-through;
+}
+body .new-colection .scroll-3img .card .image-collection3 .price {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  color: #998E78;
+  text-align: center;
+}
+body .new-colection .scroll-3img .buttons2 {
+  background-color: #FFFFFF;
+  padding: 22px 50px;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #6E9C9F;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 138.9%;
+  text-align: center;
+  letter-spacing: 0.32px;
+  color: #6E9C9F;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+body .new-colection .scroll-3img .buttons2:hover {
+  border: none;
+  background-color: #6E9C9F;
+  padding: 22px 50px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 138.9%;
+  text-align: center;
+  letter-spacing: 0.32px;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 126px;
 }
 
 /*# sourceMappingURL=home.css.map */
