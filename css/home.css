@@ -169,6 +169,38 @@ table {
   text-align: center;
 }
 
+.footer-text1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-text2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  color: #000000;
+}
+
+.active-menu {
+  color: #6E9C9F;
+  font-weight: 700;
+}
+
+.text-menu {
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+
 body {
   padding-top: 96px;
 }
@@ -212,11 +244,7 @@ body header .content .menu ul li {
 body header .content .menu ul li a {
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
   line-height: 140%;
-  letter-spacing: 0.32px;
-  color: #000000;
   text-decoration: none;
 }
 body header .content .call {
@@ -480,17 +508,22 @@ body .comand .content-comand .image-comand {
   margin-right: 124px;
   position: relative;
 }
+body .comand .content-comand .image-comand .pagination-controler {
+  position: absolute;
+  top: 411px;
+  left: 287px;
+}
 body .comand .content-comand .image-comand .pagination-controler .pag-item {
   width: 30px;
   height: 4px;
-  background-color: #D1D1D1;
+  background-color: #FFFFFF5C;
   border: none;
   margin-left: 12px;
 }
 body .comand .content-comand .image-comand .pagination-controler .pag-item.active {
-  background-color: #000000;
+  background-color: #FFFFFF;
 }
-body .comand .content-comand .image-comand button {
+body .comand .content-comand .image-comand .nav {
   width: 28px;
   height: 14px;
   border: none;
@@ -498,13 +531,13 @@ body .comand .content-comand .image-comand button {
   position: absolute;
   background-color: white;
 }
-body .comand .content-comand .image-comand button.left-b {
+body .comand .content-comand .image-comand .nav.left-b {
   background-image: url("../image/onee.svg");
   background-size: cover;
   top: 215px;
   left: -61px;
 }
-body .comand .content-comand .image-comand button.right-b {
+body .comand .content-comand .image-comand .nav.right-b {
   background-image: url("../image/two.svg");
   background-size: cover;
   top: 215px;
@@ -547,6 +580,93 @@ body .comand .content-comand .text-comand .detal {
 }
 body .comand .content-comand .text-comand .detal:hover {
   border-bottom: 1px solid #CEDEDF;
+}
+body footer {
+  width: 100%;
+  min-height: 363px;
+  background-color: #F1EADC;
+}
+body footer .content-footer {
+  padding-top: 104px;
+  display: flex;
+  justify-content: space-between;
+}
+body footer .content-footer .one-footer .logo {
+  display: flex;
+  margin-bottom: 70px;
+}
+body footer .content-footer .one-footer .logo img {
+  width: 18px;
+  margin-right: 14.47px;
+}
+body footer .content-footer .one-footer .logo h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #000000;
+}
+body footer .content-footer .one-footer .confidense ul li {
+  margin-bottom: 6px;
+}
+body footer .content-footer .two-footer .menu ul {
+  display: flex;
+}
+body footer .content-footer .two-footer .menu li {
+  align-items: center;
+}
+body footer .content-footer .two-footer .menu li a {
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  text-decoration: none;
+  margin-right: 45px;
+}
+body footer .content-footer .two-footer .clothes-item ul {
+  margin-left: 107px;
+  margin-top: 39px;
+}
+body footer .content-footer .two-footer .clothes-item ul li {
+  margin-bottom: 10px;
+}
+body footer .content-footer .three-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body footer .content-footer .three-footer p {
+  margin-bottom: 9px;
+}
+body footer .content-footer .three-footer .social-logo {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 31px;
+  margin-bottom: 31px;
+}
+body footer .content-footer .three-footer .social-logo a {
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 12px;
+}
+body footer .content-footer .three-footer .social-logo a.insta {
+  background-image: url("../image/instagram (1) 1.svg");
+}
+body footer .content-footer .three-footer .social-logo a.face {
+  background-image: url("../image/facebook (1) 1.svg");
+}
+body footer .content-footer .three-footer .social-logo a.twit {
+  background-image: url("../image/twitter (1) 1.svg");
+}
+body footer .content-footer .three-footer img {
+  width: 68px;
+  height: 22px;
 }
 
 /*# sourceMappingURL=home.css.map */
