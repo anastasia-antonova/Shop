@@ -1,3 +1,4 @@
+@import "../color";
 @mixin footer() {
   footer {
     width: 100%;
@@ -100,15 +101,15 @@
             margin-left: 12px;
 
             &.insta {
-              background-image: url("../image/instagram (1) 1.svg");
+              background-image: url("../../image/instagram (1) 1.svg");
             }
 
             &.face {
-              background-image: url("../image/facebook (1) 1.svg");
+              background-image: url("../../image/facebook (1) 1.svg");
             }
 
             &.twit {
-              background-image: url("../image/twitter (1) 1.svg");
+              background-image: url("../../image/twitter (1) 1.svg");
             }
           }
         }

@@ -54,7 +54,7 @@ table {
   border-spacing: 0;
 }
 
-.soppa {
+.basic {
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -283,18 +283,6 @@ body .banner {
 body .banner .left {
   width: 50%;
 }
-body .banner .left .title-h1 {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 55px;
-  line-height: 110%;
-  letter-spacing: 0.32px;
-  color: #000000;
-  margin-top: 145px;
-  margin-bottom: 45px;
-  max-width: 585px;
-}
 body .banner .left .text-cont {
   max-width: 385px;
   display: flex;
@@ -312,24 +300,6 @@ body .banner .left .text-cont p {
   letter-spacing: 0.32px;
   color: #000000;
   margin-bottom: 54px;
-}
-body .banner .left .text-cont .buttons1 {
-  border: none;
-  background-color: #6E9C9F;
-  padding: 22px 50px;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 138.9%;
-  text-align: center;
-  letter-spacing: 0.32px;
-  color: #FFFFFF;
-  display: block;
-  margin-bottom: 126px;
-}
-body .banner .left .text-cont .buttons1:hover {
-  background-color: #509498;
 }
 body .banner .left .text-cont .pagination-controler .pag-item {
   width: 30px;
@@ -656,13 +626,13 @@ body footer .content-footer .three-footer .social-logo a {
   margin-left: 12px;
 }
 body footer .content-footer .three-footer .social-logo a.insta {
-  background-image: url("../image/instagram (1) 1.svg");
+  background-image: url("../../image/instagram (1) 1.svg");
 }
 body footer .content-footer .three-footer .social-logo a.face {
-  background-image: url("../image/facebook (1) 1.svg");
+  background-image: url("../../image/facebook (1) 1.svg");
 }
 body footer .content-footer .three-footer .social-logo a.twit {
-  background-image: url("../image/twitter (1) 1.svg");
+  background-image: url("../../image/twitter (1) 1.svg");
 }
 body footer .content-footer .three-footer img {
   width: 68px;
