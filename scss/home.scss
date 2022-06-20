@@ -1,0 +1,337 @@
+@import "color";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+@import "reset";
+@import "general";
+@import "mixins/header";
+@import "mixins/footer";
+
+
+body {
+  padding-top: 96px;
+  @include header;
+
+  .banner {
+    display: flex;
+    margin-bottom: 130px;
+
+    .left {
+      width: 50%;
+
+      .text-cont {
+        max-width: 385px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        p {
+          max-width: 385px;
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 140%;
+          text-align: right;
+          letter-spacing: 0.32px;
+          color: $black;
+          margin-bottom: 54px;
+        }
+
+        .pagination-controler {
+          .pag-item {
+            width: 30px;
+            height: 4px;
+            background-color: $alto;
+            border: none;
+            margin-left: 12px;
+
+            &.active {
+              background-color: $black;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 50%;
+      min-height: 731px;
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 197px;
+        height: 197px;
+        position: absolute;
+        background-image: url("../image/ionut-comanici-RDcEWH5hSDE-unsplash 1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 123px;
+        left: 456px;
+      }
+
+      &::before {
+        content: '';
+        width: 190px;
+        height: 318px;
+        position: absolute;
+        background-image: url("../image/allef-vinicius-YG97wpX0OEg-unsplash 1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 391px;
+        left: -12px;
+      }
+
+      .banner-img {
+        width: 434px;
+        height: 652px;
+        margin-left: 115px;
+
+      }
+    }
+  }
+
+  .new-colection {
+    margin-bottom: 120px;
+
+    .title-h2 {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 110%;
+      letter-spacing: 0.32px;
+      color: $black;
+      margin-bottom: 92px;
+    }
+
+    .scroll-3img {
+      display: flex;
+      justify-content: space-between;
+
+      .card {
+        margin-bottom: 65px;
+
+        .parametr {
+          width: 350px;
+          height: 478px;
+          background-size: 350px;
+          background-repeat: no-repeat;
+          margin-bottom: 24px;
+          position: relative;
+          cursor: pointer;
+
+          &:hover {
+            &::after {
+              content: "";
+              background-image: url("../image/jjj.svg");
+              width: 350px;
+              height: 478px;
+              position: absolute;
+              background-color: #6E9C9FA3;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+          }
+        }
+
+        .image-collection1 {
+          background-image: url("../image/img1.png");
+        }
+
+        .image-collection2 {
+          background-image: url("../image/img2.png");
+        }
+
+        .image-collection3 {
+          background-image: url("../image/img3.png");
+        }
+      }
+
+      .buttons2 {
+        background-color: $white;
+        padding: 22px 50px;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid $gothic;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 138.9%;
+        text-align: center;
+        letter-spacing: 0.32px;
+        color: $gothic;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+
+        &:hover {
+          border: none;
+          background-color: $gothic;
+          padding: 22px 50px;
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 138.9%;
+          text-align: center;
+          letter-spacing: 0.32px;
+          color: $white;
+          display: block;
+          margin-bottom: 126px;
+        }
+      }
+    }
+  }
+
+  .our-tasks {
+    margin-bottom: 130px;
+
+    .task {
+      display: flex;
+      justify-content: space-between;
+
+      .content {
+        max-width: 305px;
+
+        h3 {
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 25px;
+          line-height: 140%;
+          letter-spacing: 0.32px;
+          color: $black;
+          margin-bottom: 24px;
+        }
+
+        .qual {
+          margin-bottom: 37px;
+        }
+
+        .speed {
+          margin-bottom: 19.5px;
+        }
+
+        .beli {
+          margin-bottom: 40.53px;
+        }
+
+        p {
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 17px;
+          line-height: 140%;
+          letter-spacing: 0.32px;
+          color: $black;
+        }
+      }
+    }
+  }
+
+  .comand {
+    margin-bottom: 130px;
+    .content-comand {
+      display: flex;
+      align-items: center;
+
+      .image-comand {
+        width: 729px;
+        min-height: 487px;
+        background-image: url("../image/adam-winger-fI-TKWjKYls-unsplash 1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 124px;
+        position: relative;
+
+        .pagination-controler {
+          position: absolute;
+          top: 411px;
+          left: 287px;
+
+          .pag-item {
+            width: 30px;
+            height: 4px;
+            background-color: #FFFFFF5C;
+            border: none;
+            margin-left: 12px;
+
+            &.active {
+              background-color: $white;
+            }
+          }
+        }
+
+        .nav {
+          width: 28px;
+          height: 14px;
+          border: none;
+          cursor: pointer;
+          position: absolute;
+          background-color: white;
+
+          &.left-b {
+            background-image: url("../image/onee.svg");
+            background-size: cover;
+            top: 215px;
+            left: -61px;
+          }
+
+          &.right-b {
+            background-image: url("../image/two.svg");
+            background-size: cover;
+            top: 215px;
+            left: 754px;
+          }
+        }
+      }
+
+      .text-comand {
+        max-width: 30%;
+
+        h3 {
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 25px;
+          line-height: 140%;
+          letter-spacing: 0.32px;
+          color: $black;
+          margin-bottom: 28px;
+        }
+
+        p {
+          max-width: 257px;
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 17px;
+          line-height: 140%;
+          letter-spacing: 0.32px;
+          color: $black;
+          margin-bottom: 28px;
+        }
+
+        .detal {
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 17px;
+          line-height: 140%;
+          letter-spacing: 0.32px;
+          text-decoration: none;
+          color: $gothic;
+          padding-bottom: 5px;
+
+          &:hover {
+            border-bottom: 1px solid $geyser;
+          }
+        }
+      }
+    }
+  }
+
+  @include footer;
+}
+

@@ -1,0 +1,125 @@
+@import "../color";
+@mixin footer() {
+  footer {
+    width: 100%;
+    min-height: 363px;
+    background-color: $ecru_white;
+
+    .content-footer {
+      padding-top: 104px;
+      display: flex;
+      justify-content: space-between;
+
+      .one-footer {
+
+        .logo {
+          display: flex;
+          margin-bottom: 70px;
+
+          img {
+            width: 18px;
+            margin-right: 14.47px;
+
+          }
+
+          h2 {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            color: $black;
+          }
+        }
+
+        .confidense {
+
+          ul {
+            li {
+              margin-bottom: 6px;
+
+            }
+          }
+        }
+      }
+
+      .two-footer {
+        .menu {
+          ul {
+            display: flex;
+          }
+
+          li {
+            align-items: center;
+
+
+            a{
+              font-family: 'Raleway';
+              font-style: normal;
+              font-size: 15px;
+              line-height: 140%;
+              letter-spacing: 0.32px;
+              text-decoration: none;
+              margin-right: 45px;
+            }
+          }
+
+        }
+        .clothes-item {
+          ul {
+            margin-left: 107px;
+            margin-top: 39px;
+            li {
+              margin-bottom: 10px;
+              a {
+
+              }
+            }
+          }
+        }
+      }
+
+      .three-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        p {
+          margin-bottom: 9px;
+        }
+        .social-logo {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 31px;
+          margin-bottom: 31px;
+          a {
+            width: 22px;
+            height: 22px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-left: 12px;
+
+            &.insta {
+              background-image: url("../../image/instagram (1) 1.svg");
+            }
+
+            &.face {
+              background-image: url("../../image/facebook (1) 1.svg");
+            }
+
+            &.twit {
+              background-image: url("../../image/twitter (1) 1.svg");
+            }
+          }
+        }
+        img {
+          width: 68px;
+          height: 22px;
+        }
+
+      }
+    }
+  }
+}
+
