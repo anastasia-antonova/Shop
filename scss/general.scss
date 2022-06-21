@@ -61,6 +61,38 @@
 }
 
 .buttons3 {
+  background-color: $white;
+  padding: 19px 65px;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid $black;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 138.9%;
+  text-align: center;
+  letter-spacing: 0.32px;
+  color: $black;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.page-number {
+  background-color: $white;
+  padding: 8.5px 16.5px;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid $black;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 138.9%;
+  text-align: center;
+  letter-spacing: 0.32px;
+  color: $black;
+  cursor: pointer;
 
 }
 
@@ -102,7 +134,6 @@
 
 .sale {
   display: block;
-  margin-left: 47px;
   position: relative;
 
   span {
@@ -110,7 +141,6 @@
     text-decoration: line-through;
   }
 }
-
 .price {
   font-family: 'Raleway';
   font-style: normal;
@@ -151,5 +181,49 @@
   font-weight: 400;
   font-size: 15px;
   color: $black;
+}
+
+.card {
+  margin-bottom: 65px;
+
+  .parametr {
+    width: 350px;
+    height: 478px;
+    background-size: 350px;
+    background-repeat: no-repeat;
+    margin-bottom: 24px;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      &::after {
+        content: "";
+        background-image: url("../image/jjj.svg");
+        width: 350px;
+        height: 478px;
+        position: absolute;
+        background-color: #6E9C9FA3;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  .image-collection1 {
+    background-image: url("../image/img1.png");
+  }
+
+  .image-collection2 {
+    background-image: url("../image/img2.png");
+  }
+
+  .image-collection3 {
+    background-image: url("../image/img3.png");
+  }
+}
+
+.active {
+  color: $white;
+  background-color: $black;
 }
 

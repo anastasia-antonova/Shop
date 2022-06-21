@@ -4,3 +4,51 @@
 @import "general";
 @import "mixins/header";
 @import "mixins/footer";
+
+body {
+  padding-top: 96px;
+  @include header;
+
+  .menu-shop {
+    margin-top: 150px;
+    p {font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 140%;
+      letter-spacing: 0.32px;
+    }
+    .colorb {
+      color: $black;
+    }
+    .colorg {
+      color: $gray;
+    }
+    .button-filtr {
+      margin-top: 214px;
+      margin-bottom: 92px;
+      .active {
+        color: $white;
+        background-color: $black;
+      }
+    }
+    .product {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 65px;
+    }
+    .page {
+      display: flex;
+      justify-content: space-between;
+      max-width: 96px;
+      margin: auto;
+      margin-top: 65px;
+      margin-bottom: 130px;
+    }
+
+  }
+
+  @include footer;
+
+}
