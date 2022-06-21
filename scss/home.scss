@@ -23,6 +23,23 @@ body {
         flex-direction: column;
         align-items: flex-end;
 
+        .buttons1 {
+          position: relative;
+          &::before {
+            content: " ";
+            width: 67px;
+            height: 67px;
+            background-color: #6E9C9F1A;
+            position: absolute;
+            background-image: url("../image/after.svg");
+            background-size: 14px;
+            background-repeat: no-repeat;
+            background-position: center;
+            top:0px;
+            left: -68px;
+          }
+        }
+
         p {
           max-width: 385px;
           font-family: 'Raleway';
@@ -50,6 +67,8 @@ body {
           }
         }
       }
+
+
     }
 
     .right {
