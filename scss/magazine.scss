@@ -1,0 +1,126 @@
+@import "color";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+@import "reset";
+@import "general";
+@import "mixins/header";
+@import "mixins/footer";
+
+body {
+  padding-top: 96px;
+  @include header;
+
+  .example-product {
+    .title-h1 {
+      margin-top: 80px;
+      margin-bottom: 26px;
+      letter-spacing: 1.1px;
+    }
+
+    .one-product {
+      display: flex;
+      margin-top: 100px;
+      img {
+        width: 536px;
+        height: 729px;
+      }
+      .right-one-product {
+        padding: 126px 74px;
+
+        .new-price {
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 40px;
+          line-height: 33px;
+          letter-spacing: 0.32px;
+          color: $pale_oyster;
+        }
+        .old-price {
+          ont-family: 'Raleway';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 33px;
+          letter-spacing: 0.32px;
+          text-decoration-line: line-through;
+          color: $dusty_gray;
+          margin-left: 29px;
+        }
+        .title-h4 {
+          margin-top: 59px;
+        }
+        .product-size {
+          margin-top: 36px;
+          .item-size {
+            min-width: 41px;
+            min-height: 41px;
+            text-transform: uppercase;
+            border: 1px solid $black;
+            background-color: $white;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 140%;
+            letter-spacing: 0.32px;
+            margin-right: 10px;
+            cursor: pointer;
+          }
+          .active-item-size {
+            color: $white;
+            background-color: $black;
+          }
+        }
+        .color-product {
+          margin-top: 34px;
+          .item-color{
+            width: 41px;
+            height: 41px;
+            border-radius: 50%;
+            border: none;
+            margin-right: 10px;
+            cursor: pointer;
+            &.active-color {
+              border: 1px solid $black;
+            }
+            &.brown {
+              background-color: #927876;
+            }
+            &.gray {
+              background-color: #D4D4D4;
+            }
+            &.pink {
+              background-color: #FD9696;
+            }
+            &.yellow {
+              background-color: #FDC796;
+            }
+          }
+        }
+        .buttons1 {
+          margin-top: 39px;
+        }
+
+      }
+    }
+  }
+  .other-product {
+    margin-top: 4px;
+
+    .title-h2 {
+      margin-bottom: 67px;
+    }
+
+    .other-product-two {
+      display: flex;
+      margin-bottom: 130px;
+      .card {
+        margin-right: 30px;
+      }
+    }
+
+  }
+
+  @include footer;
+
+}

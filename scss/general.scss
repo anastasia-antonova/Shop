@@ -93,7 +93,6 @@
   letter-spacing: 0.32px;
   color: $black;
   cursor: pointer;
-
 }
 
 .title-h1 {
@@ -120,6 +119,16 @@
   margin-bottom: 92px;
 }
 
+.title-h4 {
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+}
+
 .name {
   font-family: 'Raleway';
   font-style: normal;
@@ -141,6 +150,7 @@
     text-decoration: line-through;
   }
 }
+
 .price {
   font-family: 'Raleway';
   font-style: normal;
@@ -177,6 +187,7 @@
   color: $gothic;
   font-weight: 700;
 }
+
 .text-menu {
   font-weight: 400;
   font-size: 15px;
@@ -226,4 +237,22 @@
   color: $white;
   background-color: $black;
 }
+
+.breadcr {font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+}
+
+.colorb {
+  color: $black;
+}
+
+.colorg {
+  color: $gray;
+}
+
+
 

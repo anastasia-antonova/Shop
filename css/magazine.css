@@ -373,44 +373,108 @@ body header .content .buy {
   background-image: url("../../image/buy.svg");
   background-repeat: no-repeat;
 }
-body .menu-shop {
-  margin-top: 150px;
+body .example-product .title-h1 {
+  margin-top: 80px;
+  margin-bottom: 26px;
+  letter-spacing: 1.1px;
 }
-body .menu-shop .breadcr {
+body .example-product .one-product {
+  display: flex;
+  margin-top: 100px;
+}
+body .example-product .one-product img {
+  width: 536px;
+  height: 729px;
+}
+body .example-product .one-product .right-one-product {
+  padding: 126px 74px;
+}
+body .example-product .one-product .right-one-product .new-price {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 33px;
+  letter-spacing: 0.32px;
+  color: #998E78;
+}
+body .example-product .one-product .right-one-product .old-price {
+  ont-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 33px;
+  letter-spacing: 0.32px;
+  text-decoration-line: line-through;
+  color: #9C9C9C;
+  margin-left: 29px;
+}
+body .example-product .one-product .right-one-product .title-h4 {
+  margin-top: 59px;
+}
+body .example-product .one-product .right-one-product .product-size {
+  margin-top: 36px;
+}
+body .example-product .one-product .right-one-product .product-size .item-size {
+  min-width: 41px;
+  min-height: 41px;
+  text-transform: uppercase;
+  border: 1px solid #000000;
+  background-color: #FFFFFF;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
   letter-spacing: 0.32px;
+  margin-right: 10px;
+  cursor: pointer;
 }
-body .menu-shop .colorb {
-  color: #000000;
-}
-body .menu-shop .colorg {
-  color: #909090;
-}
-body .menu-shop .button-filtr {
-  margin-top: 214px;
-  margin-bottom: 92px;
-}
-body .menu-shop .button-filtr .active {
+body .example-product .one-product .right-one-product .product-size .active-item-size {
   color: #FFFFFF;
   background-color: #000000;
 }
-body .menu-shop .product {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 65px;
+body .example-product .one-product .right-one-product .color-product {
+  margin-top: 34px;
 }
-body .menu-shop .page {
+body .example-product .one-product .right-one-product .color-product .item-color {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+body .example-product .one-product .right-one-product .color-product .item-color.active-color {
+  border: 1px solid #000000;
+}
+body .example-product .one-product .right-one-product .color-product .item-color.brown {
+  background-color: #927876;
+}
+body .example-product .one-product .right-one-product .color-product .item-color.gray {
+  background-color: #D4D4D4;
+}
+body .example-product .one-product .right-one-product .color-product .item-color.pink {
+  background-color: #FD9696;
+}
+body .example-product .one-product .right-one-product .color-product .item-color.yellow {
+  background-color: #FDC796;
+}
+body .example-product .one-product .right-one-product .buttons1 {
+  margin-top: 39px;
+}
+body .other-product {
+  margin-top: 4px;
+}
+body .other-product .title-h2 {
+  margin-bottom: 67px;
+}
+body .other-product .other-product-two {
   display: flex;
-  justify-content: space-between;
-  max-width: 96px;
-  margin: auto;
-  margin-top: 65px;
   margin-bottom: 130px;
+}
+body .other-product .other-product-two .card {
+  margin-right: 30px;
 }
 body footer {
   width: 100%;
@@ -500,4 +564,4 @@ body footer .content-footer .three-footer img {
   height: 22px;
 }
 
-/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=magazine.css.map */
