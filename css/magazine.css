@@ -378,6 +378,10 @@ body .example-product .title-h1 {
   margin-bottom: 26px;
   letter-spacing: 1.1px;
 }
+body .example-product .breadcr .marg {
+  margin-left: 8px;
+  margin-right: 14px;
+}
 body .example-product .one-product {
   display: flex;
   margin-top: 100px;
@@ -390,6 +394,7 @@ body .example-product .one-product .right-one-product {
   padding: 126px 74px;
 }
 body .example-product .one-product .right-one-product .new-price {
+  display: flex;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
@@ -399,7 +404,7 @@ body .example-product .one-product .right-one-product .new-price {
   color: #998E78;
 }
 body .example-product .one-product .right-one-product .old-price {
-  ont-family: "Raleway";
+  Font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -407,13 +412,13 @@ body .example-product .one-product .right-one-product .old-price {
   letter-spacing: 0.32px;
   text-decoration-line: line-through;
   color: #9C9C9C;
-  margin-left: 29px;
+  margin-left: 31px;
 }
 body .example-product .one-product .right-one-product .title-h4 {
-  margin-top: 59px;
+  margin-top: 64px;
 }
 body .example-product .one-product .right-one-product .product-size {
-  margin-top: 36px;
+  margin-top: 33px;
 }
 body .example-product .one-product .right-one-product .product-size .item-size {
   min-width: 41px;
@@ -445,20 +450,24 @@ body .example-product .one-product .right-one-product .color-product .item-color
   margin-right: 10px;
   cursor: pointer;
 }
-body .example-product .one-product .right-one-product .color-product .item-color.active-color {
-  border: 1px solid #000000;
-}
 body .example-product .one-product .right-one-product .color-product .item-color.brown {
   background-color: #927876;
+  border: 1px solid #927876;
 }
 body .example-product .one-product .right-one-product .color-product .item-color.gray {
   background-color: #D4D4D4;
+  border: 1px solid #D4D4D4;
 }
 body .example-product .one-product .right-one-product .color-product .item-color.pink {
   background-color: #FD9696;
+  border: 1px solid #FD9696;
 }
 body .example-product .one-product .right-one-product .color-product .item-color.yellow {
   background-color: #FDC796;
+  border: 1px solid #FDC796;
+}
+body .example-product .one-product .right-one-product .color-product .item-color.active-color {
+  border: 1px solid #000000;
 }
 body .example-product .one-product .right-one-product .buttons1 {
   margin-top: 39px;
