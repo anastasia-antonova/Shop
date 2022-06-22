@@ -1,3 +1,4 @@
+/* other color*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -54,6 +55,7 @@ table {
   border-spacing: 0;
 }
 
+/* other color*/
 .basic {
   max-width: 1100px;
   margin: 0 auto;
@@ -99,14 +101,6 @@ table {
 .buttons2:hover {
   border: none;
   background-color: #6E9C9F;
-  padding: 22px 50px;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 138.9%;
-  text-align: center;
-  letter-spacing: 0.32px;
   color: #FFFFFF;
   display: block;
   margin-bottom: 126px;
@@ -178,6 +172,16 @@ table {
   font-size: 20px;
   line-height: 140%;
   letter-spacing: 0.32px;
+}
+
+.title-breadcrumps .title-h1 {
+  margin-top: 80px;
+  margin-bottom: 26px;
+  letter-spacing: 1.1px;
+}
+.title-breadcrumps .breadcrumps .marg {
+  margin-left: 8px;
+  margin-right: 14px;
 }
 
 .name {
@@ -281,7 +285,7 @@ table {
   background-color: #000000;
 }
 
-.breadcr {
+.breadcrumps {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
@@ -290,14 +294,16 @@ table {
   letter-spacing: 0.32px;
 }
 
-.colorb {
+.color-black {
   color: #000000;
 }
 
-.colorg {
+.color-gray {
   color: #909090;
 }
 
+/* other color*/
+/* other color*/
 body {
   padding-top: 96px;
 }
@@ -378,7 +384,7 @@ body .example-product .title-h1 {
   margin-bottom: 26px;
   letter-spacing: 1.1px;
 }
-body .example-product .breadcr .marg {
+body .example-product .breadcrumps .marg {
   margin-left: 8px;
   margin-right: 14px;
 }
@@ -404,12 +410,7 @@ body .example-product .one-product .right-one-product .new-price {
   color: #998E78;
 }
 body .example-product .one-product .right-one-product .old-price {
-  Font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
   font-size: 30px;
-  line-height: 33px;
-  letter-spacing: 0.32px;
   text-decoration-line: line-through;
   color: #9C9C9C;
   margin-left: 31px;
