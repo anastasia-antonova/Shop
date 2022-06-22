@@ -46,14 +46,6 @@
   &:hover {
     border: none;
     background-color: $gothic;
-    padding: 22px 50px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 138.9%;
-    text-align: center;
-    letter-spacing: 0.32px;
     color: $white;
     display: block;
     margin-bottom: 126px;
@@ -61,7 +53,38 @@
 }
 
 .buttons3 {
+  background-color: $white;
+  padding: 19px 65px;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid $black;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 138.9%;
+  text-align: center;
+  letter-spacing: 0.32px;
+  color: $black;
+  cursor: pointer;
+  margin-right: 10px;
+}
 
+.page-number {
+  background-color: $white;
+  padding: 8.5px 16.5px;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid $black;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 138.9%;
+  text-align: center;
+  letter-spacing: 0.32px;
+  color: $black;
+  cursor: pointer;
 }
 
 .title-h1 {
@@ -88,6 +111,30 @@
   margin-bottom: 92px;
 }
 
+.title-h4 {
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+}
+
+.title-breadcrumps {
+  .title-h1 {
+    margin-top: 80px;
+    margin-bottom: 26px;
+    letter-spacing: 1.1px;
+  }
+  .breadcrumps {
+    .marg {
+      margin-left: 8px;
+      margin-right: 14px;
+    }
+  }
+}
+
 .name {
   font-family: 'Raleway';
   font-style: normal;
@@ -102,7 +149,6 @@
 
 .sale {
   display: block;
-  margin-left: 47px;
   position: relative;
 
   span {
@@ -147,9 +193,72 @@
   color: $gothic;
   font-weight: 700;
 }
+
 .text-menu {
   font-weight: 400;
   font-size: 15px;
   color: $black;
 }
+
+.card {
+  margin-bottom: 65px;
+
+  .parametr {
+    width: 350px;
+    height: 478px;
+    background-size: 350px;
+    background-repeat: no-repeat;
+    margin-bottom: 24px;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      &::after {
+        content: "";
+        background-image: url("../image/jjj.svg");
+        width: 350px;
+        height: 478px;
+        position: absolute;
+        background-color: #6E9C9FA3;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  .image-collection1 {
+    background-image: url("../image/img1.png");
+  }
+
+  .image-collection2 {
+    background-image: url("../image/img2.png");
+  }
+
+  .image-collection3 {
+    background-image: url("../image/img3.png");
+  }
+}
+
+.active {
+  color: $white;
+  background-color: $black;
+}
+
+.breadcrumps {font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+}
+
+.color-black {
+  color: $black;
+}
+
+.color-gray {
+  color: $gray;
+}
+
+
 
