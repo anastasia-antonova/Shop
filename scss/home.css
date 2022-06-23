@@ -171,6 +171,32 @@ table {
   letter-spacing: 0.32px;
 }
 
+.title-h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  color: #000000;
+  margin-bottom: 46px;
+}
+
+.p-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.title-breadcrumps {
+  margin-bottom: 214px;
+  margin-top: 150px;
+}
 .title-breadcrumps .title-h1 {
   margin-top: 80px;
   margin-bottom: 26px;
@@ -299,6 +325,17 @@ table {
   color: #909090;
 }
 
+.image-text {
+  display: flex;
+}
+.image-text .img-about {
+  width: 442px;
+  height: 547px;
+}
+.image-text .about-text {
+  padding: 117px 94px;
+}
+
 /* other color*/
 /* other color*/
 body {
@@ -376,44 +413,263 @@ body header .content .buy {
   background-image: url("../../image/buy.svg");
   background-repeat: no-repeat;
 }
-body .menu-shop {
-  margin-top: 150px;
+body .banner {
+  display: flex;
+  margin-bottom: 130px;
 }
-body .menu-shop .breadcr {
+body .banner .left {
+  width: 50%;
+}
+body .banner .left .text-cont {
+  max-width: 385px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body .banner .left .text-cont .buttons1 {
+  position: relative;
+}
+body .banner .left .text-cont .buttons1::before {
+  content: " ";
+  width: 67px;
+  height: 67px;
+  background-color: #6E9C9F1A;
+  position: absolute;
+  background-image: url("../image/after.svg");
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0px;
+  left: -68px;
+}
+body .banner .left .text-cont p {
+  max-width: 385px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: right;
+  letter-spacing: 0.32px;
+  color: #000000;
+  margin-bottom: 54px;
+}
+body .banner .left .text-cont .pagination-controler .pag-item {
+  width: 30px;
+  height: 4px;
+  background-color: #D1D1D1;
+  border: none;
+  margin-left: 12px;
+}
+body .banner .left .text-cont .pagination-controler .pag-item.active {
+  background-color: #000000;
+}
+body .banner .right {
+  width: 50%;
+  min-height: 731px;
+  position: relative;
+}
+body .banner .right::after {
+  content: "";
+  width: 197px;
+  height: 197px;
+  position: absolute;
+  background-image: url("../image/ionut-comanici-RDcEWH5hSDE-unsplash 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 123px;
+  left: 456px;
+}
+body .banner .right::before {
+  content: "";
+  width: 190px;
+  height: 318px;
+  position: absolute;
+  background-image: url("../image/allef-vinicius-YG97wpX0OEg-unsplash 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 391px;
+  left: -12px;
+}
+body .banner .right .banner-img {
+  width: 434px;
+  height: 652px;
+  margin-left: 115px;
+}
+body .new-colection {
+  margin-bottom: 120px;
+}
+body .new-colection .title-h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: 0.32px;
+  color: #000000;
+  margin-bottom: 92px;
+}
+body .new-colection .scroll-3img {
+  display: flex;
+  justify-content: space-between;
+}
+body .new-colection .scroll-3img .card {
+  margin-bottom: 65px;
+}
+body .new-colection .scroll-3img .card .parametr {
+  width: 350px;
+  height: 478px;
+  background-size: 350px;
+  background-repeat: no-repeat;
+  margin-bottom: 24px;
+  position: relative;
+  cursor: pointer;
+}
+body .new-colection .scroll-3img .card .parametr:hover::after {
+  content: "";
+  background-image: url("../image/jjj.svg");
+  width: 350px;
+  height: 478px;
+  position: absolute;
+  background-color: #6E9C9FA3;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body .new-colection .scroll-3img .card .image-collection1 {
+  background-image: url("../image/img1.png");
+}
+body .new-colection .scroll-3img .card .image-collection2 {
+  background-image: url("../image/img2.png");
+}
+body .new-colection .scroll-3img .card .image-collection3 {
+  background-image: url("../image/img3.png");
+}
+body .our-tasks {
+  margin-bottom: 130px;
+}
+body .our-tasks .task {
+  display: flex;
+  justify-content: space-between;
+}
+body .our-tasks .task .content {
+  max-width: 305px;
+}
+body .our-tasks .task .content h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+body .our-tasks .task .content .qual {
+  margin-bottom: 37px;
+}
+body .our-tasks .task .content .speed {
+  margin-bottom: 19.5px;
+}
+body .our-tasks .task .content .beli {
+  margin-bottom: 40.53px;
+}
+body .our-tasks .task .content p {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
   letter-spacing: 0.32px;
-}
-body .menu-shop .colorb {
   color: #000000;
 }
-body .menu-shop .colorg {
-  color: #909090;
-}
-body .menu-shop .button-filtr {
-  margin-top: 214px;
-  margin-bottom: 92px;
-}
-body .menu-shop .button-filtr .active {
-  color: #FFFFFF;
-  background-color: #000000;
-}
-body .menu-shop .product {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 65px;
-}
-body .menu-shop .page {
-  display: flex;
-  justify-content: space-between;
-  max-width: 96px;
-  margin: auto;
-  margin-top: 65px;
+body .comand {
   margin-bottom: 130px;
+}
+body .comand .content-comand {
+  display: flex;
+  align-items: center;
+}
+body .comand .content-comand .image-comand {
+  width: 729px;
+  min-height: 487px;
+  background-image: url("../image/adam-winger-fI-TKWjKYls-unsplash 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 124px;
+  position: relative;
+}
+body .comand .content-comand .image-comand .pagination-controler {
+  position: absolute;
+  top: 411px;
+  left: 287px;
+}
+body .comand .content-comand .image-comand .pagination-controler .pag-item {
+  width: 30px;
+  height: 4px;
+  background-color: #FFFFFF5C;
+  border: none;
+  margin-left: 12px;
+}
+body .comand .content-comand .image-comand .pagination-controler .pag-item.active {
+  background-color: #FFFFFF;
+}
+body .comand .content-comand .image-comand .nav {
+  width: 28px;
+  height: 14px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  background-color: white;
+}
+body .comand .content-comand .image-comand .nav.left-b {
+  background-image: url("../image/onee.svg");
+  background-size: cover;
+  top: 215px;
+  left: -61px;
+}
+body .comand .content-comand .image-comand .nav.right-b {
+  background-image: url("../image/two.svg");
+  background-size: cover;
+  top: 215px;
+  left: 754px;
+}
+body .comand .content-comand .text-comand {
+  max-width: 30%;
+}
+body .comand .content-comand .text-comand h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  color: #000000;
+  margin-bottom: 28px;
+}
+body .comand .content-comand .text-comand p {
+  max-width: 257px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  color: #000000;
+  margin-bottom: 28px;
+}
+body .comand .content-comand .text-comand .detal {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  text-decoration: none;
+  color: #6E9C9F;
+  padding-bottom: 5px;
+}
+body .comand .content-comand .text-comand .detal:hover {
+  border-bottom: 1px solid #CEDEDF;
 }
 body footer {
   width: 100%;
@@ -503,4 +759,4 @@ body footer .content-footer .three-footer img {
   height: 22px;
 }
 
-/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=home.css.map */
