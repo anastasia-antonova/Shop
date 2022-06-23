@@ -1,0 +1,32 @@
+@import "color";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+@import "reset";
+@import "general";
+@import "mixins/header";
+@import "mixins/footer";
+
+body{
+  padding-top: 96px;
+
+  @include header;
+
+  .about-us {
+    .buttons1 {
+      display: block;
+      margin: 120px auto 130px;
+    }
+    .image-text{
+      &.padding-about-us {
+        .about-text {
+          max-width: 542px;
+          padding: 117px 0px;
+          margin-right: 123px;
+        }
+      }
+
+
+    }
+  }
+
+  @include footer;
+}
