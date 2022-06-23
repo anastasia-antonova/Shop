@@ -164,41 +164,6 @@ body {
           background-image: url("../image/img3.png");
         }
       }
-
-      .buttons2 {
-        background-color: $white;
-        padding: 22px 50px;
-        flex-direction: row;
-        align-items: center;
-        border: 1px solid $gothic;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 17px;
-        line-height: 138.9%;
-        text-align: center;
-        letter-spacing: 0.32px;
-        color: $gothic;
-        cursor: pointer;
-        display: block;
-        margin: auto;
-
-        &:hover {
-          border: none;
-          background-color: $gothic;
-          padding: 22px 50px;
-          font-family: 'Raleway';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 17px;
-          line-height: 138.9%;
-          text-align: center;
-          letter-spacing: 0.32px;
-          color: $white;
-          display: block;
-          margin-bottom: 126px;
-        }
-      }
     }
   }
 

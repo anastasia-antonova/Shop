@@ -99,11 +99,8 @@ table {
   margin: auto;
 }
 .buttons2:hover {
-  border: none;
   background-color: #6E9C9F;
   color: #FFFFFF;
-  display: block;
-  margin-bottom: 126px;
 }
 
 .buttons3 {

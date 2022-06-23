@@ -1,3 +1,4 @@
+/* other color*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -54,6 +55,7 @@ table {
   border-spacing: 0;
 }
 
+/* other color*/
 .basic {
   max-width: 1100px;
   margin: 0 auto;
@@ -97,9 +99,16 @@ table {
   margin: auto;
 }
 .buttons2:hover {
-  border: none;
   background-color: #6E9C9F;
-  padding: 22px 50px;
+  color: #FFFFFF;
+}
+
+.buttons3 {
+  background-color: #FFFFFF;
+  padding: 19px 65px;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #000000;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -107,9 +116,26 @@ table {
   line-height: 138.9%;
   text-align: center;
   letter-spacing: 0.32px;
-  color: #FFFFFF;
-  display: block;
-  margin-bottom: 126px;
+  color: #000000;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.page-number {
+  background-color: #FFFFFF;
+  padding: 8.5px 16.5px;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #000000;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 138.9%;
+  text-align: center;
+  letter-spacing: 0.32px;
+  color: #000000;
+  cursor: pointer;
 }
 
 .title-h1 {
@@ -136,6 +162,25 @@ table {
   margin-bottom: 92px;
 }
 
+.title-h4 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+}
+
+.title-breadcrumps .title-h1 {
+  margin-top: 80px;
+  margin-bottom: 26px;
+  letter-spacing: 1.1px;
+}
+.title-breadcrumps .breadcrumps .marg {
+  margin-left: 8px;
+  margin-right: 14px;
+}
+
 .name {
   font-family: "Raleway";
   font-style: normal;
@@ -150,7 +195,6 @@ table {
 
 .sale {
   display: block;
-  margin-left: 47px;
   position: relative;
 }
 .sale span {
@@ -201,6 +245,62 @@ table {
   color: #000000;
 }
 
+.card {
+  margin-bottom: 65px;
+}
+.card .parametr {
+  width: 350px;
+  height: 478px;
+  background-size: 350px;
+  background-repeat: no-repeat;
+  margin-bottom: 24px;
+  position: relative;
+  cursor: pointer;
+}
+.card .parametr:hover::after {
+  content: "";
+  background-image: url("../image/jjj.svg");
+  width: 350px;
+  height: 478px;
+  position: absolute;
+  background-color: #6E9C9FA3;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card .image-collection1 {
+  background-image: url("../image/img1.png");
+}
+.card .image-collection2 {
+  background-image: url("../image/img2.png");
+}
+.card .image-collection3 {
+  background-image: url("../image/img3.png");
+}
+
+.active {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.breadcrumps {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+}
+
+.color-black {
+  color: #000000;
+}
+
+.color-gray {
+  color: #909090;
+}
+
+/* other color*/
+/* other color*/
 body {
   padding-top: 96px;
 }
@@ -255,7 +355,7 @@ body header .content .call a {
   display: block;
   width: 14.45px;
   height: 17px;
-  background-image: url("../../image/telephone 1.svg");
+  background-image: url("../image/telephone 1.svg");
   background-repeat: no-repeat;
   margin-right: 15.55px;
   line-height: 140%;
@@ -273,7 +373,7 @@ body header .content .buy {
   display: block;
   width: 24px;
   height: 23.54px;
-  background-image: url("../../image/buy.svg");
+  background-image: url("../image/buy.svg");
   background-repeat: no-repeat;
 }
 body .banner {
@@ -406,39 +506,6 @@ body .new-colection .scroll-3img .card .image-collection2 {
 }
 body .new-colection .scroll-3img .card .image-collection3 {
   background-image: url("../image/img3.png");
-}
-body .new-colection .scroll-3img .buttons2 {
-  background-color: #FFFFFF;
-  padding: 22px 50px;
-  flex-direction: row;
-  align-items: center;
-  border: 1px solid #6E9C9F;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 138.9%;
-  text-align: center;
-  letter-spacing: 0.32px;
-  color: #6E9C9F;
-  cursor: pointer;
-  display: block;
-  margin: auto;
-}
-body .new-colection .scroll-3img .buttons2:hover {
-  border: none;
-  background-color: #6E9C9F;
-  padding: 22px 50px;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 138.9%;
-  text-align: center;
-  letter-spacing: 0.32px;
-  color: #FFFFFF;
-  display: block;
-  margin-bottom: 126px;
 }
 body .our-tasks {
   margin-bottom: 130px;
@@ -642,13 +709,13 @@ body footer .content-footer .three-footer .social-logo a {
   margin-left: 12px;
 }
 body footer .content-footer .three-footer .social-logo a.insta {
-  background-image: url("../../image/instagram (1) 1.svg");
+  background-image: url("../image/instagram (1) 1.svg");
 }
 body footer .content-footer .three-footer .social-logo a.face {
-  background-image: url("../../image/facebook (1) 1.svg");
+  background-image: url("../image/facebook (1) 1.svg");
 }
 body footer .content-footer .three-footer .social-logo a.twit {
-  background-image: url("../../image/twitter (1) 1.svg");
+  background-image: url("../image/twitter (1) 1.svg");
 }
 body footer .content-footer .three-footer img {
   width: 68px;
