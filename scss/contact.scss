@@ -19,9 +19,24 @@ body{
 
     .adress {
       display: flex;
+      margin-bottom: 130px;
       ul{
+        margin-right: 111px;
 
       }
     }
+
+    .form-box {
+      input {
+        min-height: 35px;
+        min-width: 350px;
+        display: block;
+        border: none;
+        border-bottom: 1px solid $black;
+        padding: 0px 16px;
+        margin-bottom: 35px;
+      }
+    }
+
   }
 }

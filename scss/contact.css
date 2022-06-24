@@ -417,6 +417,19 @@ body .all-content .map-contact {
 }
 body .all-content .adress {
   display: flex;
+  margin-bottom: 130px;
+}
+body .all-content .adress ul {
+  margin-right: 111px;
+}
+body .all-content .form-box input {
+  min-height: 35px;
+  min-width: 350px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 0px 16px;
+  margin-bottom: 35px;
 }
 
 /*# sourceMappingURL=contact.css.map */
