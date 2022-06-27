@@ -10,6 +10,7 @@ body{
   @include header;
 
   .all-content {
+    margin-bottom: 160px;
 
     .map-contact {
       min-height: 476px;
@@ -27,25 +28,57 @@ body{
     }
 
     .form-box {
-      input {
-        min-height: 35px;
-        min-width: 350px;
-        display: block;
-        border: none;
-        border-bottom: 1px solid $black;
-        padding: 0px 16px;
-        margin-bottom: 35px;
+      form {
+        input {
+          min-height: 35px;
+          min-width: 350px;
+          display: block;
+          border: none;
+          border-bottom: 1px solid $black;
+          padding: 16px 0px;
+          margin-bottom: 35px;
+
+          &::placeholder {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 140%;
+            letter-spacing: 0.32px;
+          }
+        }
+        textarea {
+          border: none;
+          border-bottom: 1px solid $black;
+          min-width: 447px;
+          padding: 16px 0px;
+
+          &::placeholder {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 140%;
+            letter-spacing: 0.32px;
+          }
+        }
+        button {
+          margin-top: 35px;
+          margin-bottom: 62px;
+        }
       }
     }
+
     .mail-send-secsess {
       max-width: 285px;
-      min-height: 84px;
       background-color: $ecru_white;
-      padding: 30px 0;
+      padding: 30px 76px;
 
       p {
+        margin-bottom: 0;
       }
     }
-
   }
+
+  @include footer;
 }
