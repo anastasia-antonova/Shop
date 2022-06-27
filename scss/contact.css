@@ -431,5 +431,11 @@ body .all-content .form-box input {
   padding: 0px 16px;
   margin-bottom: 35px;
 }
+body .all-content .mail-send-secsess {
+  max-width: 285px;
+  min-height: 84px;
+  background-color: #F1EADC;
+  padding: 30px 0;
+}
 
 /*# sourceMappingURL=contact.css.map */
