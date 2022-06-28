@@ -1,0 +1,84 @@
+@import "color";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+@import "reset";
+@import "general";
+@import "mixins/header";
+@import "mixins/footer";
+
+body{
+
+  @include header;
+
+  .all-content {
+    margin-bottom: 160px;
+
+    .map-contact {
+      min-height: 476px;
+      background-color: $gray;
+      margin-bottom: 130px;
+    }
+
+    .adress {
+      display: flex;
+      margin-bottom: 130px;
+      ul{
+        margin-right: 111px;
+
+      }
+    }
+
+    .form-box {
+      form {
+        input {
+          min-height: 35px;
+          min-width: 350px;
+          display: block;
+          border: none;
+          border-bottom: 1px solid $black;
+          padding: 16px 0px;
+          margin-bottom: 35px;
+
+          &::placeholder {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 140%;
+            letter-spacing: 0.32px;
+          }
+        }
+        textarea {
+          border: none;
+          border-bottom: 1px solid $black;
+          min-width: 447px;
+          padding: 16px 0px;
+
+          &::placeholder {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 140%;
+            letter-spacing: 0.32px;
+          }
+        }
+        button {
+          margin-top: 35px;
+          margin-bottom: 62px;
+        }
+      }
+    }
+
+    .mail-send-secsess {
+      max-width: 285px;
+      background-color: $ecru_white;
+      padding: 30px 76px;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @include footer;
+}
