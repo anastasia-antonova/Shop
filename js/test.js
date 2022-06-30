@@ -99,6 +99,48 @@ console.log(boringAnimals.join("7"))
 console.log(boringAnimals.join(" ? "))
 console.log(boringAnimals.join(" "))
 
+let phrases = [
+    "That sounds good",
+    "Yes, you should definitely do that",
+    "I'm not sure that's a great idea",
+    "Maybe not today?",
+    "Computer says no."
+];
+//чи варто мені бухнути
+console.log(phrases[Math.floor(Math.random() * 5)], Math.random() * 5)
+//чрмрмрммтм
+console.log(phrases[Math.floor(Math.random() * 5)], Math.random() * 5)
+//орпорарпв
+console.log(phrases[Math.floor(Math.random() * 5)], Math.random() * 5)
+
+//створення генератору образливих фраз
+
+let randomBodyParts = ["Face", "Nose", "Hair"];
+let randomAdjectives = ["Smelly", "Boring", "Stupid"];
+let randomWords = ["Fly", "Marmot", "Stick", "Monkey", "Rat"];
+
+let randomBodyPart = randomBodyParts[Math.floor(Math.random() * 3)]
+let randomAdjective = randomAdjectives[Math.floor(Math.random() * 3)]
+let randomWord = randomWords[Math.floor(Math.random() * randomWords.length)]
+let randomInsult = "Your " + randomBodyPart + " is like a  " +
+    randomAdjective + " " + randomWord + "!!!";
+console.log(randomInsult)
+
+console.log(randomInsult = ["Your", randomBodyPart, "is", "like", "a", randomAdjective, randomWord + "!!!"].join(" "))
+
+console.log(randomInsult)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
