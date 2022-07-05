@@ -1,0 +1,177 @@
+@import "color";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+@import "reset";
+@import "general";
+@import "mixins/header";
+@import "mixins/footer";
+
+body {
+  padding-top: 96px;
+  @include header;
+
+  .card {
+    margin-bottom: 130px;
+
+    .card-box {
+
+      .text-card {
+        display: flex;
+        min-height: 52px;
+        border-bottom: 1px solid $silver;
+
+        ul {
+          display: flex;
+          align-items: center;
+
+          li {
+            &:first-child {
+              margin-right: 216px;
+            }
+            &:nth-child(2) {
+              margin-right: 139px;
+            }
+            &:nth-child(3) {
+              margin-right: 167px;
+            }
+          }
+        }
+
+      }
+      .product-buy {
+
+        table {
+          width: 100%;
+
+          thead {
+            border-bottom: 1px solid $silver;
+            tr th {
+              text-align: left;
+              padding-bottom: 26px;
+
+              &.big{
+                min-width: 40%;
+              }
+            }
+          }
+
+          tbody {
+           tr {
+
+             td {
+               padding-top: 49px;
+
+             }
+               button {
+                 width: 12px;
+                 height: 12px;
+                 background-image: url("../image/close.svg");
+                 background-repeat: no-repeat;
+                 background-size: cover;
+                 background-color: white;
+                 border: none;
+                 a {
+
+                 }
+               }
+             }
+             td {
+               button {
+                 margin-right: 45px;
+                 cursor: pointer;
+               }
+
+               img {
+                 width: 137px;
+                 margin-right: 39px;
+               }
+
+               input {
+                 width: 47px;
+                 height: 47px;
+                 text-align: center;
+                 border-radius: none;
+                 border: 1px solid $silver_chalice;
+
+                 &[type="number"]::-webkit-outer-spin-button,
+                 &[type="number"]::-webkit-inner-spin-button {
+                   -webkit-appearance: none;
+                   margin: 0;
+                 }
+                 &[type="number"] {
+                   -moz-appearance: textfield;
+                 }
+               }
+             }
+           }
+          }
+        .coupon {
+          margin-top: 77px;
+          display: flex;
+          justify-content: space-between;
+
+          button {
+            margin: 0;
+          }
+
+          .coupon-box {
+            display: flex;
+            input {
+              width: 255px;
+              border: none;
+              border-bottom: 1px solid $black;
+              margin-right: 16px;
+            }
+            button {
+            }
+          }
+        }
+        }
+      }
+
+    .total {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 88px;
+
+      p {
+        span {
+          margin-left: 20px;
+        }
+      }
+
+      .total-button {
+        display: flex;
+
+        .total-all {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $ecru_white;
+          min-width: 287px;
+          max-width: 287px;
+          min-height: 68px;
+
+           p {
+             margin: 0;
+
+             span {
+               margin-left: 69px;
+             }
+            }
+        }
+
+        button {
+          margin-bottom: 0;
+          margin-left: 15px;
+        }
+
+      }
+    }
+    }
+
+  @include footer;
+
+  }
+
+

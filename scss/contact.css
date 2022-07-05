@@ -336,6 +336,24 @@ table {
   padding: 117px 94px;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  color: #868686;
+}
+
 /* other color*/
 /* other color*/
 body header {

@@ -431,14 +431,121 @@ body header .content .buy {
   background-image: url("../../image/buy.svg");
   background-repeat: no-repeat;
 }
-body .about-us .buttons1 {
-  display: block;
-  margin: 120px auto 130px;
+body .card {
+  margin-bottom: 130px;
 }
-body .about-us .image-text.padding-about-us .about-text {
-  max-width: 542px;
-  padding: 117px 0;
-  margin-right: 123px;
+body .card .card-box .text-card {
+  display: flex;
+  min-height: 52px;
+  border-bottom: 1px solid #CCCCCC;
+}
+body .card .card-box .text-card ul {
+  display: flex;
+  align-items: center;
+}
+body .card .card-box .text-card ul li:first-child {
+  margin-right: 216px;
+}
+body .card .card-box .text-card ul li:nth-child(2) {
+  margin-right: 139px;
+}
+body .card .card-box .text-card ul li:nth-child(3) {
+  margin-right: 167px;
+}
+body .card .card-box .product-buy table {
+  width: 100%;
+}
+body .card .card-box .product-buy table thead {
+  border-bottom: 1px solid #CCCCCC;
+}
+body .card .card-box .product-buy table thead tr th {
+  text-align: left;
+  padding-bottom: 26px;
+}
+body .card .card-box .product-buy table thead tr th.big {
+  min-width: 40%;
+}
+body .card .card-box .product-buy table tbody tr td {
+  padding-top: 49px;
+}
+body .card .card-box .product-buy table tbody tr button {
+  width: 12px;
+  height: 12px;
+  background-image: url("../image/close.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  border: none;
+}
+body .card .card-box .product-buy table tbody td button {
+  margin-right: 45px;
+  cursor: pointer;
+}
+body .card .card-box .product-buy table tbody td img {
+  width: 137px;
+  margin-right: 39px;
+}
+body .card .card-box .product-buy table tbody td input {
+  width: 47px;
+  height: 47px;
+  text-align: center;
+  border-radius: none;
+  border: 1px solid #AFAFAF;
+}
+body .card .card-box .product-buy table tbody td input[type=number]::-webkit-outer-spin-button, body .card .card-box .product-buy table tbody td input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body .card .card-box .product-buy table tbody td input[type=number] {
+  -moz-appearance: textfield;
+}
+body .card .card-box .product-buy .coupon {
+  margin-top: 77px;
+  display: flex;
+  justify-content: space-between;
+}
+body .card .card-box .product-buy .coupon button {
+  margin: 0;
+}
+body .card .card-box .product-buy .coupon .coupon-box {
+  display: flex;
+}
+body .card .card-box .product-buy .coupon .coupon-box input {
+  width: 255px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  margin-right: 16px;
+}
+body .card .total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 88px;
+}
+body .card .total p span {
+  margin-left: 20px;
+}
+body .card .total .total-button {
+  display: flex;
+}
+body .card .total .total-button .total-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1EADC;
+  min-width: 287px;
+  max-width: 287px;
+  min-height: 68px;
+}
+body .card .total .total-button .total-all p {
+  margin: 0;
+}
+body .card .total .total-button .total-all p span {
+  margin-left: 69px;
+}
+body .card .total .total-button button {
+  margin-bottom: 0;
+  margin-left: 15px;
 }
 body footer {
   width: 100%;
@@ -528,4 +635,4 @@ body footer .content-footer .three-footer img {
   height: 22px;
 }
 
-/*# sourceMappingURL=about-us.css.map */
+/*# sourceMappingURL=card.css.map */
