@@ -75,6 +75,7 @@ table {
   color: #FFFFFF;
   display: block;
   margin-bottom: 126px;
+  cursor: pointer;
 }
 .buttons1:hover {
   background-color: #509498;
@@ -356,6 +357,16 @@ input::placeholder {
   color: #868686;
 }
 
+textarea {
+  resize: none;
+}
+textarea:focus {
+  outline: none;
+}
+textarea::placeholder {
+  color: #868686;
+}
+
 /* other color*/
 /* other color*/
 body {
@@ -439,6 +450,18 @@ body .all-content .information {
 body .all-content .information .left {
   margin-right: 313px;
 }
+body .all-content .information .left textarea {
+  border: none;
+  border-bottom: 1px solid #000000;
+  min-width: 350px;
+  min-height: 134px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+}
 body .all-content .information .left form {
   margin-bottom: 81px;
 }
@@ -451,11 +474,67 @@ body .all-content .information .left form input {
   padding: 16px 0px;
   margin-bottom: 35px;
 }
+body .all-content .information .left input {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  max-width: 350px;
+}
 body .all-content .information .right table .color-table {
-  background-color: #868686;
+  background-color: #F1EADC;
 }
 body .all-content .information .right table tr td {
   padding: 15px 18px 24px;
+}
+body .all-content .information .right .payment-methods {
+  margin-top: 145px;
+}
+body .all-content .information .right .payment-methods form label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body .all-content .information .right .payment-methods form label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+body .all-content .information .right .payment-methods form label input:checked ~ .radiobutton1::after {
+  display: block;
+}
+body .all-content .information .right .payment-methods form label .radiobutton1 {
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border: 1px solid #000000;
+}
+body .all-content .information .right .payment-methods form label .radiobutton1::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 10px;
+  height: 10px;
+  background: #000000;
+  display: none;
+}
+body .all-content .information .right .payment-methods button {
+  margin-top: 47px;
 }
 
 /*# sourceMappingURL=checkout.css.map */

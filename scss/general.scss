@@ -20,6 +20,7 @@
   color: $white;
   display: block;
   margin-bottom: 126px;
+  cursor: pointer;
 
   &:hover {
     background-color: $smalt_blue;
@@ -317,4 +318,13 @@ input {
   }
 }
 
+textarea {
+  resize: none;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: $gray2;
+  }
+}
 

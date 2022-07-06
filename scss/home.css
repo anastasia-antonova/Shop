@@ -75,6 +75,7 @@ table {
   color: #FFFFFF;
   display: block;
   margin-bottom: 126px;
+  cursor: pointer;
 }
 .buttons1:hover {
   background-color: #509498;
@@ -353,6 +354,16 @@ input:focus {
   outline: none;
 }
 input::placeholder {
+  color: #868686;
+}
+
+textarea {
+  resize: none;
+}
+textarea:focus {
+  outline: none;
+}
+textarea::placeholder {
   color: #868686;
 }
 
