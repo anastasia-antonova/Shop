@@ -10,7 +10,8 @@ body {
   padding-top: 96px;
   @include header;
 
-  .all-content {
+  .all-content {g
+    margin-bottom: 130px;
     .information {
       display: flex;
       .left {
@@ -125,5 +126,7 @@ body {
     }
 
   }
+
+  @include footer;
 
 }

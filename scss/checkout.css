@@ -444,6 +444,9 @@ body header .content .buy {
   background-image: url("../../image/buy.svg");
   background-repeat: no-repeat;
 }
+body .all-content {
+  margin-bottom: 130px;
+}
 body .all-content .information {
   display: flex;
 }
@@ -535,6 +538,93 @@ body .all-content .information .right .payment-methods form label .radiobutton1:
 }
 body .all-content .information .right .payment-methods button {
   margin-top: 47px;
+}
+body footer {
+  width: 100%;
+  min-height: 363px;
+  background-color: #F1EADC;
+}
+body footer .content-footer {
+  padding-top: 104px;
+  display: flex;
+  justify-content: space-between;
+}
+body footer .content-footer .one-footer .logo {
+  display: flex;
+  margin-bottom: 70px;
+}
+body footer .content-footer .one-footer .logo img {
+  width: 18px;
+  margin-right: 14.47px;
+}
+body footer .content-footer .one-footer .logo h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #000000;
+}
+body footer .content-footer .one-footer .confidense ul li {
+  margin-bottom: 6px;
+}
+body footer .content-footer .two-footer .menu ul {
+  display: flex;
+}
+body footer .content-footer .two-footer .menu li {
+  align-items: center;
+}
+body footer .content-footer .two-footer .menu li a {
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  text-decoration: none;
+  margin-right: 45px;
+}
+body footer .content-footer .two-footer .clothes-item ul {
+  margin-left: 107px;
+  margin-top: 39px;
+}
+body footer .content-footer .two-footer .clothes-item ul li {
+  margin-bottom: 10px;
+}
+body footer .content-footer .three-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body footer .content-footer .three-footer p {
+  margin-bottom: 9px;
+}
+body footer .content-footer .three-footer .social-logo {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 31px;
+  margin-bottom: 31px;
+}
+body footer .content-footer .three-footer .social-logo a {
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 12px;
+}
+body footer .content-footer .three-footer .social-logo a.insta {
+  background-image: url("../../image/instagram (1) 1.svg");
+}
+body footer .content-footer .three-footer .social-logo a.face {
+  background-image: url("../../image/facebook (1) 1.svg");
+}
+body footer .content-footer .three-footer .social-logo a.twit {
+  background-image: url("../../image/twitter (1) 1.svg");
+}
+body footer .content-footer .three-footer img {
+  width: 68px;
+  height: 22px;
 }
 
 /*# sourceMappingURL=checkout.css.map */
