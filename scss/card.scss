@@ -48,8 +48,8 @@ body {
               text-align: left;
               padding-bottom: 26px;
 
-              &.big{
-                min-width: 40%;
+              &.big {
+                width: 475px;
               }
             }
           }
@@ -59,7 +59,6 @@ body {
 
              td {
                padding-top: 49px;
-
              }
                button {
                  width: 12px;
@@ -89,7 +88,7 @@ body {
                  width: 47px;
                  height: 47px;
                  text-align: center;
-                 border-radius: none;
+                 border-radius: 0;
                  border: 1px solid $silver_chalice;
 
                  &[type="number"]::-webkit-outer-spin-button,

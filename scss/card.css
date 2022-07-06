@@ -341,16 +341,18 @@ table {
   align-items: center;
 }
 
-input:focus {
-  outline: none;
-}
-input::placeholder {
+input {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
   letter-spacing: 0.32px;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
   color: #868686;
 }
 
@@ -463,7 +465,7 @@ body .card .card-box .product-buy table thead tr th {
   padding-bottom: 26px;
 }
 body .card .card-box .product-buy table thead tr th.big {
-  min-width: 40%;
+  width: 475px;
 }
 body .card .card-box .product-buy table tbody tr td {
   padding-top: 49px;
@@ -489,7 +491,7 @@ body .card .card-box .product-buy table tbody td input {
   width: 47px;
   height: 47px;
   text-align: center;
-  border-radius: none;
+  border-radius: 0;
   border: 1px solid #AFAFAF;
 }
 body .card .card-box .product-buy table tbody td input[type=number]::-webkit-outer-spin-button, body .card .card-box .product-buy table tbody td input[type=number]::-webkit-inner-spin-button {

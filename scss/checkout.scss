@@ -1,0 +1,51 @@
+@import "color";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+@import "reset";
+@import "general";
+@import "mixins/header";
+@import "mixins/footer";
+
+
+body {
+  padding-top: 96px;
+  @include header;
+
+  .all-content {
+    .information {
+      display: flex;
+      .left {
+        margin-right: 313px;
+        form {
+          margin-bottom: 81px;
+          input {
+            min-height: 35px;
+            min-width: 350px;
+            display: block;
+            border: none;
+            border-bottom: 1px solid $black;
+            padding: 16px 0px;
+            margin-bottom: 35px;
+          }
+        }
+      }
+      .right {
+        table {
+          .color-table {
+            background-color: #868686;
+          }
+          tr {
+
+            td {
+              padding: 15px 18px 24px;
+
+            }
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}

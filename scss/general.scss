@@ -302,16 +302,17 @@
 }
 
 input {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+
   &:focus {
     outline: none;
   }
   &::placeholder {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 140%;
-    letter-spacing: 0.32px;
     color: $gray2;
   }
 }
