@@ -310,12 +310,29 @@ table {
 }
 
 .breadcrumps {
+  display: flex;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
   letter-spacing: 0.32px;
+}
+.breadcrumps li {
+  position: relative;
+}
+.breadcrumps li::before {
+  content: "-";
+  position: absolute;
+  top: 0px;
+  left: -24px;
+}
+.breadcrumps li:first-child::before {
+  content: " ";
+}
+.breadcrumps li a {
+  text-decoration: none;
+  margin-right: 42px;
 }
 
 .color-black {
@@ -446,20 +463,6 @@ body header .content .buy {
 }
 body .menu-shop {
   margin-top: 150px;
-}
-body .menu-shop .breadcr {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 140%;
-  letter-spacing: 0.32px;
-}
-body .menu-shop .colorb {
-  color: #000000;
-}
-body .menu-shop .colorg {
-  color: #909090;
 }
 body .menu-shop .button-filtr {
   margin-top: 214px;

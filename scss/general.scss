@@ -268,12 +268,34 @@
 }
 
 .breadcrumps {
+  display: flex;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
   letter-spacing: 0.32px;
+
+  li{
+    position: relative;
+
+    &::before {
+      content: "-";
+      position: absolute;
+      top: 0px;
+      left: -24px;
+
+    }
+
+    &:first-child::before {
+      content: " ";
+    }
+    a {
+      text-decoration: none;
+      margin-right: 42px;
+    }
+  }
+
 }
 
 .color-black {

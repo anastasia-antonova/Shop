@@ -310,12 +310,29 @@ table {
 }
 
 .breadcrumps {
+  display: flex;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
   letter-spacing: 0.32px;
+}
+.breadcrumps li {
+  position: relative;
+}
+.breadcrumps li::before {
+  content: "-";
+  position: absolute;
+  top: 0px;
+  left: -24px;
+}
+.breadcrumps li:first-child::before {
+  content: " ";
+}
+.breadcrumps li a {
+  text-decoration: none;
+  margin-right: 42px;
 }
 
 .color-black {
@@ -448,6 +465,10 @@ body .all-content .map-contact {
   min-height: 476px;
   background-color: #909090;
   margin-bottom: 130px;
+}
+body .all-content .map-contact iframe {
+  min-height: 476px;
+  width: 100%;
 }
 body .all-content .adress {
   display: flex;
