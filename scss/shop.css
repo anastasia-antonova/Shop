@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* other color*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -75,6 +76,7 @@ table {
   color: #FFFFFF;
   display: block;
   margin-bottom: 126px;
+  cursor: pointer;
 }
 .buttons1:hover {
   background-color: #509498;
@@ -309,12 +311,29 @@ table {
 }
 
 .breadcrumps {
+  display: flex;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
   letter-spacing: 0.32px;
+}
+.breadcrumps li {
+  position: relative;
+}
+.breadcrumps li::before {
+  content: "—";
+  position: absolute;
+  top: 0px;
+  left: -27px;
+}
+.breadcrumps li:first-child::before {
+  content: " ";
+}
+.breadcrumps li a {
+  text-decoration: none;
+  margin-right: 42px;
 }
 
 .color-black {
@@ -341,16 +360,28 @@ table {
   align-items: center;
 }
 
-input:focus {
-  outline: none;
-}
-input::placeholder {
+input {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
   letter-spacing: 0.32px;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: #868686;
+}
+
+textarea {
+  resize: none;
+}
+textarea:focus {
+  outline: none;
+}
+textarea::placeholder {
   color: #868686;
 }
 
@@ -433,20 +464,6 @@ body header .content .buy {
 }
 body .menu-shop {
   margin-top: 150px;
-}
-body .menu-shop .breadcr {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 140%;
-  letter-spacing: 0.32px;
-}
-body .menu-shop .colorb {
-  color: #000000;
-}
-body .menu-shop .colorg {
-  color: #909090;
 }
 body .menu-shop .button-filtr {
   margin-top: 214px;

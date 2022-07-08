@@ -1,12 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Contact</title>
-    <link rel="stylesheet" href="scss/contact.css">
+    <title>Title</title>
+    <link rel="stylesheet" href="scss/checkout.css">
 </head>
 <body>
 <header>
@@ -27,7 +24,7 @@
                     <a href="" class="text-menu">О бренде</a>
                 </li>
                 <li>
-                    <a href="" class="active-menu">Контакты</a>
+                    <a href="" class="text-menu">Контакты</a>
                 </li>
             </ul>
         </div>
@@ -38,52 +35,86 @@
         <a href="" class="buy"></a>
     </div>
 </header>
-<section class="basic all-content">
+<section class="all-content basic">
     <div class="title-breadcrumps">
-        <h1 class="title-h1">Контакты</h1>
+        <h1 class="title-h1">Оформление заказа</h1>
         <ul class="breadcrumps">
             <li><a href="" class="color-black">Главная</a></li>
-            <li><a href="" class="color-gray">Контакты</a></li>
+            <li><a href="" class="color-gray">Оформление заказа</a></li>
         </ul>
     </div>
-    <div class="map-contact">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.9999239131666!2d36.1730939157046!3d49.97385997941249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1cb7a7d3b7b%3A0x8f24eda498ef0704!2z0JPRgNC40LPQvtGA0L7QstGB0LrQvtC1INGILiwgODEsINCl0LDRgNGM0LrQvtCyLCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2MTAwMA!5e0!3m2!1sru!2sua!4v1657194704166!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="adress">
-        <ul>
-            <li class="p-text">Телефон</li>
-            <li class="title-h4">+7 (495) 823-54-12</li>
-        </ul>
-        <ul>
-            <li class="p-text">E-mail</li>
-            <li class="title-h4">info@sitename.com</li>
-        </ul>
-        <ul>
-            <li class="p-text">Адрес</li>
-            <li class="title-h4">г. Харьков, 3-я улица Строителей, 25</li>
-        </ul>
-    </div>
-    <div class="form-box">
-        <h3 class="title-h3">Напишите нам</h3>
-        <form action="">
+    <div class="information">
+        <div class="left">
+            <h3 class="title-h3">Данные покупателя</h3>
+            <form action="">
 
-            <label for="name"></label>
-            <input type="text" id="name" placeholder="Имя">
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Имя">
 
-            <label for="email"></label>
-            <input type="email" id="email" placeholder="E-mail">
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="E-mail">
 
-            <label for="telephone"></label>
-            <input type="text" id="telephone" placeholder="Телефон">
+                <label for="telephone"></label>
+                <input type="text" id="telephone" placeholder="Телефон">
 
-            <label for="massage"></label>
-            <textarea name="" id="massage" cols="30" rows="10" placeholder="Cообщение"></textarea>
 
-            <button class="buttons1">Отправить</button>
 
-        </form>
-        <div class="mail-send-secsess">
-            <p class="p-text">Сообщение успешно отправлено</p>
+            </form>
+            <h3 class="title-h3">Адрес получателя</h3>
+            <form action="">
+
+                <label for="country"></label>
+                <input type="text" id="country" placeholder="Страна">
+
+                <label for="city"></label>
+                <input type="email" id="city" placeholder="Город">
+
+                <label for="street"></label>
+                <input type="text" id="street" placeholder="Улица">
+
+                <label for="home"></label>
+                <input type="text" id="home" placeholder="Дом">
+
+                <label for="apartament"></label>
+                <input type="text" id="apartament" placeholder="Квартира">
+
+
+            </form>
+            <h3 class="title-h3">Комментарии</h3>
+            <label for="comment"></label>
+            <textarea name="" id="comment" cols="30" rows="10" placeholder="Страна"></textarea>
+        </div>
+        <div class="right">
+            <h3 class="title-h3">Ваш заказ</h3>
+            <table>
+
+                <tr>
+                    <td class="title-h4">Товар</td>
+                    <td class="title-h4">Всего</td>
+                </tr>
+                <tr>
+                    <td class="p-text">Футболка USA</td>
+                    <td class="p-text">$129</td>
+                </tr>
+                <tr >
+                    <td class="p-text">Подытог</td>
+                    <td class="p-text">$129</td>
+                </tr>
+                <tr class="color-table">
+                    <td class="title-h4">Итого</td>
+                    <td class="title-h4">$129</td>
+                </tr>
+            </table>
+            <div class="payment-methods">
+                <h3 class="title-h3">Способы оплаты</h3>
+                <form action="">
+                    <label class="p-text">Оплата наличными
+                        <input  type="checkbox" name="payment" value="cash">
+                        <span class="radiobutton1"></span>
+                    </label>
+                </form>
+                <button class="buttons1">Разместить заказ</button>
+            </div>
         </div>
     </div>
 </section>
@@ -141,6 +172,5 @@
 
     </div>
 </footer>
-
 </body>
 </html>

@@ -16,6 +16,11 @@ body{
       min-height: 476px;
       background-color: $gray;
       margin-bottom: 130px;
+
+      iframe {
+        min-height: 476px;
+        width: 100%;
+      }
     }
 
     .adress {

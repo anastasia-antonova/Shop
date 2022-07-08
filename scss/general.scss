@@ -20,6 +20,7 @@
   color: $white;
   display: block;
   margin-bottom: 126px;
+  cursor: pointer;
 
   &:hover {
     background-color: $smalt_blue;
@@ -267,12 +268,33 @@
 }
 
 .breadcrumps {
+  display: flex;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
   letter-spacing: 0.32px;
+
+  li{
+    position: relative;
+
+    &::before {
+      content: "—";
+      position: absolute;
+      top: 0px;
+      left: -27px;
+    }
+
+    &:first-child::before {
+      content: " ";
+    }
+    a {
+      text-decoration: none;
+      margin-right: 42px;
+    }
+  }
+
 }
 
 .color-black {
@@ -302,18 +324,28 @@
 }
 
 input {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+
   &:focus {
     outline: none;
   }
   &::placeholder {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 140%;
-    letter-spacing: 0.32px;
     color: $gray2;
   }
 }
 
+textarea {
+  resize: none;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: $gray2;
+  }
+}
 

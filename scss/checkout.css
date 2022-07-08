@@ -387,6 +387,9 @@ textarea::placeholder {
 
 /* other color*/
 /* other color*/
+body {
+  padding-top: 96px;
+}
 body header {
   width: 100%;
   min-height: 95px;
@@ -460,25 +463,30 @@ body header .content .buy {
   background-repeat: no-repeat;
 }
 body .all-content {
-  margin-bottom: 160px;
-}
-body .all-content .map-contact {
-  min-height: 476px;
-  background-color: #909090;
   margin-bottom: 130px;
 }
-body .all-content .map-contact iframe {
-  min-height: 476px;
-  width: 100%;
-}
-body .all-content .adress {
+body .all-content .information {
   display: flex;
-  margin-bottom: 130px;
 }
-body .all-content .adress ul {
-  margin-right: 111px;
+body .all-content .information .left {
+  margin-right: 313px;
 }
-body .all-content .form-box form input {
+body .all-content .information .left textarea {
+  border: none;
+  border-bottom: 1px solid #000000;
+  min-width: 350px;
+  min-height: 134px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+}
+body .all-content .information .left form {
+  margin-bottom: 81px;
+}
+body .all-content .information .left form input {
   min-height: 35px;
   min-width: 350px;
   display: block;
@@ -487,39 +495,67 @@ body .all-content .form-box form input {
   padding: 16px 0px;
   margin-bottom: 35px;
 }
-body .all-content .form-box form input::placeholder {
+body .all-content .information .left input {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
   letter-spacing: 0.32px;
-}
-body .all-content .form-box form textarea {
   border: none;
   border-bottom: 1px solid #000000;
-  min-width: 447px;
-  padding: 16px 0px;
+  max-width: 350px;
 }
-body .all-content .form-box form textarea::placeholder {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 140%;
-  letter-spacing: 0.32px;
-}
-body .all-content .form-box form button {
-  margin-top: 35px;
-  margin-bottom: 62px;
-}
-body .all-content .mail-send-secsess {
-  max-width: 285px;
+body .all-content .information .right table .color-table {
   background-color: #F1EADC;
-  padding: 30px 76px;
 }
-body .all-content .mail-send-secsess p {
-  margin-bottom: 0;
+body .all-content .information .right table tr td {
+  padding: 15px 18px 24px;
+}
+body .all-content .information .right .payment-methods {
+  margin-top: 145px;
+}
+body .all-content .information .right .payment-methods form label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body .all-content .information .right .payment-methods form label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+body .all-content .information .right .payment-methods form label input:checked ~ .radiobutton1::after {
+  display: block;
+}
+body .all-content .information .right .payment-methods form label .radiobutton1 {
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border: 1px solid #000000;
+}
+body .all-content .information .right .payment-methods form label .radiobutton1::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 10px;
+  height: 10px;
+  background: #000000;
+  display: none;
+}
+body .all-content .information .right .payment-methods button {
+  margin-top: 47px;
 }
 body footer {
   width: 100%;
@@ -609,4 +645,4 @@ body footer .content-footer .three-footer img {
   height: 22px;
 }
 
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=checkout.css.map */
