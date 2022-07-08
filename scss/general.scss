@@ -280,11 +280,10 @@
     position: relative;
 
     &::before {
-      content: "-";
+      content: "—";
       position: absolute;
       top: 0px;
-      left: -24px;
-
+      left: -27px;
     }
 
     &:first-child::before {

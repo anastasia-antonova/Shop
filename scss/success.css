@@ -459,67 +459,26 @@ body header .content .buy {
   background-image: url("../../image/buy.svg");
   background-repeat: no-repeat;
 }
-body .all-content {
-  margin-bottom: 160px;
+body .success {
+  margin-bottom: 140px;
 }
-body .all-content .map-contact {
-  min-height: 476px;
-  background-color: #909090;
-  margin-bottom: 130px;
-}
-body .all-content .map-contact iframe {
-  min-height: 476px;
-  width: 100%;
-}
-body .all-content .adress {
+body .success .success-box {
   display: flex;
-  margin-bottom: 130px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-body .all-content .adress ul {
-  margin-right: 111px;
+body .success .success-box .success-message {
+  display: flex;
+  align-items: flex-start;
 }
-body .all-content .form-box form input {
-  min-height: 35px;
-  min-width: 350px;
-  display: block;
-  border: none;
-  border-bottom: 1px solid #000000;
-  padding: 16px 0px;
-  margin-bottom: 35px;
+body .success .success-box .success-message .text {
+  margin-left: 44px;
 }
-body .all-content .form-box form input::placeholder {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 140%;
-  letter-spacing: 0.32px;
+body .success .success-box .success-message .text p:first-child {
+  margin-bottom: 17px;
 }
-body .all-content .form-box form textarea {
-  border: none;
-  border-bottom: 1px solid #000000;
-  min-width: 447px;
-  padding: 16px 0px;
-}
-body .all-content .form-box form textarea::placeholder {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 140%;
-  letter-spacing: 0.32px;
-}
-body .all-content .form-box form button {
-  margin-top: 35px;
-  margin-bottom: 62px;
-}
-body .all-content .mail-send-secsess {
-  max-width: 285px;
-  background-color: #F1EADC;
-  padding: 30px 76px;
-}
-body .all-content .mail-send-secsess p {
-  margin-bottom: 0;
+body .success .success-box button {
+  margin: 0;
 }
 body footer {
   width: 100%;
@@ -609,4 +568,4 @@ body footer .content-footer .three-footer img {
   height: 22px;
 }
 
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=success.css.map */
