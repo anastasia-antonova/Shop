@@ -130,6 +130,18 @@ console.log(randomInsult = ["Your", randomBodyPart, "is", "like", "a", randomAdj
 
 console.log(randomInsult)
 
+let scores = {}
+scores["Jumi"] = 0;
+scores["Anna"] = 0;
+scores["Jurii"] = 0;
+console.log(scores);
+scores["Jumi"] += 1
+console.log(scores["Jumi"]);
+scores["Jurii"] += 3
+scores["Anna"] += 2
+console.log(scores)
+
+
 
 
 
