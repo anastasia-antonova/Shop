@@ -478,7 +478,25 @@ body .all-content .adress {
 body .all-content .adress ul {
   margin-right: 111px;
 }
-body .all-content .form-box form input {
+body .all-content .form-box .form-section .form-group.form-group--error span {
+  display: block;
+  font-family: "Montserrat";
+  color: #ff1744;
+  margin-top: -28px;
+  font-size: 12px;
+}
+body .all-content .form-box .form-section .form-group.form-group--error label {
+  color: #ff1744;
+}
+body .all-content .form-box .form-section .form-group.form-group--error input {
+  border-bottom: 1px solid #ff1744;
+  color: #ff1744;
+}
+body .all-content .form-box .form-section .form-group.form-group--error textarea {
+  border-bottom: 1px solid #ff1744;
+  color: #ff1744;
+}
+body .all-content .form-box .form-section .form-group input {
   min-height: 35px;
   min-width: 350px;
   display: block;
@@ -487,7 +505,7 @@ body .all-content .form-box form input {
   padding: 16px 0px;
   margin-bottom: 35px;
 }
-body .all-content .form-box form input::placeholder {
+body .all-content .form-box .form-section .form-group input::placeholder {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
@@ -495,13 +513,13 @@ body .all-content .form-box form input::placeholder {
   line-height: 140%;
   letter-spacing: 0.32px;
 }
-body .all-content .form-box form textarea {
+body .all-content .form-box .form-section .form-group textarea {
   border: none;
   border-bottom: 1px solid #000000;
   min-width: 447px;
   padding: 16px 0px;
 }
-body .all-content .form-box form textarea::placeholder {
+body .all-content .form-box .form-section .form-group textarea::placeholder {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
@@ -509,7 +527,10 @@ body .all-content .form-box form textarea::placeholder {
   line-height: 140%;
   letter-spacing: 0.32px;
 }
-body .all-content .form-box form button {
+body .all-content .form-box .form-section .form-group span {
+  display: none;
+}
+body .all-content .form-box .form-section button {
   margin-top: 35px;
   margin-bottom: 62px;
 }

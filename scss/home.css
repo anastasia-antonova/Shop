@@ -808,6 +808,7 @@ body footer .content-footer .three-footer img {
   height: 22px;
 }
 body .back-drop {
+  display: none;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -815,7 +816,6 @@ body .back-drop {
   left: 0;
   z-index: 999;
   background-color: #6E9C9FF2;
-  display: flex;
   justify-content: center;
   align-items: center;
 }

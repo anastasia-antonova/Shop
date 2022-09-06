@@ -33,7 +33,7 @@
             </ul>
         </div>
         <div class="call">
-            <a href=""></a>
+            <a onclick="document.getElementById('call').style.display = 'flex'"></a>
             <p>+7 (495) 823-54-12</p>
         </div>
         <a href="" class="buy"></a>
@@ -174,9 +174,9 @@
 
     </div>
 </footer>
-<div class="back-drop">
+<div class="back-drop" id="call">
     <div class="modal-section ">
-        <button class="close"></button>
+        <button class="close" onclick="document.getElementById('call').style.display = 'none'"></button>
         <div class="content-modal">
             <h3 class="title-h3">Заказать обратный звонок</h3>
             <form action="">
@@ -196,7 +196,7 @@
         </div>
     </div>
 </div>
-<div class="back-drop">
+<div class="back-drop" id="callSuccess">
     <div class="modal-section success">
         <div class="content-modal">
             <h3 class="title-h3">Отлично! Мы скоро вам перезвоним.</h3>

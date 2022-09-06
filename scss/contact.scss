@@ -33,40 +33,73 @@ body{
     }
 
     .form-box {
-      form {
-        input {
-          min-height: 35px;
-          min-width: 350px;
-          display: block;
-          border: none;
-          border-bottom: 1px solid $black;
-          padding: 16px 0px;
-          margin-bottom: 35px;
+      .form-section {
+        .form-group {
 
-          &::placeholder {
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 17px;
-            line-height: 140%;
-            letter-spacing: 0.32px;
+          &.form-group--error {
+              span {
+                display: block;
+                font-family: "Montserrat";
+                color: #ff1744;
+                margin-top: -28px;
+                font-size: 12px;
+              }
+
+              label {
+                color: #ff1744;
+              }
+
+              input {
+                border-bottom: 1px solid #ff1744;
+                color: #ff1744;
+              }
+
+              textarea {
+              border-bottom: 1px solid #ff1744;
+              color: #ff1744;
+            }
+
+            }
+
+          input {
+            min-height: 35px;
+            min-width: 350px;
+            display: block;
+            border: none;
+            border-bottom: 1px solid $black;
+            padding: 16px 0px;
+            margin-bottom: 35px;
+
+            &::placeholder {
+              font-family: 'Raleway';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 17px;
+              line-height: 140%;
+              letter-spacing: 0.32px;
+            }
+          }
+          textarea {
+            border: none;
+            border-bottom: 1px solid $black;
+            min-width: 447px;
+            padding: 16px 0px;
+
+            &::placeholder {
+              font-family: 'Raleway';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 17px;
+              line-height: 140%;
+              letter-spacing: 0.32px;
+            }
+          }
+
+          span {
+            display: none;
           }
         }
-        textarea {
-          border: none;
-          border-bottom: 1px solid $black;
-          min-width: 447px;
-          padding: 16px 0px;
 
-          &::placeholder {
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 17px;
-            line-height: 140%;
-            letter-spacing: 0.32px;
-          }
-        }
         button {
           margin-top: 35px;
           margin-bottom: 62px;

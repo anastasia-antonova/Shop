@@ -65,22 +65,35 @@
     </div>
     <div class="form-box">
         <h3 class="title-h3">Напишите нам</h3>
-        <form action="">
+        <form action="" class="form-section">
 
-            <label for="name"></label>
-            <input type="text" id="name" placeholder="Имя">
+            <div class="form-group">
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Имя">
+                <span class="required">Это поле обязательное</span>
+            </div>
 
-            <label for="email"></label>
-            <input type="email" id="email" placeholder="E-mail">
+            <div class="form-group">
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="E-mail">
+                <span class="required">Это поле обязательное</span>
+            </div>
 
-            <label for="telephone"></label>
-            <input type="text" id="telephone" placeholder="Телефон">
+            <div class="form-group">
+                <label for="telephone"></label>
+                <input type="text" id="telephone" placeholder="Телефон">
+                <span class="required">Это поле обязательное</span>
+                <span class="minimum">Максимум 10 символов и минимум 6</span>
+            </div>
 
-            <label for="massage"></label>
-            <textarea name="" id="massage" cols="30" rows="10" placeholder="Cообщение"></textarea>
+            <div class="form-group">
+                <label for="massage"></label>
+                <textarea name="" id="massage" cols="30" rows="10" placeholder="Cообщение"></textarea>
+                <span class="required">Это поле обязательное</span>
+                <span class="text-min">Минимум 20 символов</span>
+            </div>
 
-            <button class="buttons1">Отправить</button>
-
+            <button class="buttons1" type="button" onclick="send()">Отправить</button>
         </form>
         <div class="mail-send-secsess">
             <p class="p-text">Сообщение успешно отправлено</p>
@@ -141,6 +154,6 @@
 
     </div>
 </footer>
-
+<script src="js/main.js"></script>
 </body>
 </html>
