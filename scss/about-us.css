@@ -385,6 +385,79 @@ textarea::placeholder {
   color: #868686;
 }
 
+.form-section {
+  margin-bottom: 81px;
+}
+.form-section .form-group input {
+  min-height: 35px;
+  min-width: 350px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 16px 0px;
+  margin-bottom: 35px;
+}
+.form-section .form-group.form-group--error span {
+  display: block;
+  font-family: "Montserrat";
+  color: #ff1744;
+  margin-top: -28px;
+  font-size: 12px;
+}
+.form-section .form-group.form-group--error label {
+  color: #ff1744;
+}
+.form-section .form-group.form-group--error input {
+  border-bottom: 1px solid #ff1744;
+  color: #ff1744;
+}
+.form-section .form-group.form-group--error textarea {
+  border-bottom: 1px solid #ff1744;
+  color: #ff1744;
+}
+.form-section .form-group label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.form-section .form-group label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.form-section .form-group label input:checked ~ .radiobutton1::after {
+  display: block;
+}
+.form-section .form-group label .radiobutton1 {
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border: 1px solid #000000;
+}
+.form-section .form-group label .radiobutton1::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 10px;
+  height: 10px;
+  background: #000000;
+  display: none;
+}
+.form-section .form-group span {
+  display: none;
+}
+
 /* other color*/
 /* other color*/
 body {

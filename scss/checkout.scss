@@ -28,47 +28,43 @@ body {
           line-height: 140%;
           letter-spacing: 0.32px;
         }
-        form {
+        .form-section {
           margin-bottom: 81px;
-          input {
-            min-height: 35px;
-            min-width: 350px;
-            display: block;
-            border: none;
-            border-bottom: 1px solid $black;
-            padding: 16px 0px;
-            margin-bottom: 35px;
-          }
-        }
-        input {
-          font-family: 'Raleway';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 17px;
-          line-height: 140%;
-          letter-spacing: 0.32px;
-          border: none;
-          border-bottom: 1px solid $black;
-          max-width: 350px;
-        }
-      }
-      .right {
-        table {
+          .form-group {
+            input {
+              min-height: 35px;
+              min-width: 350px;
+              display: block;
+              border: none;
+              border-bottom: 1px solid $black;
+              padding: 16px 0px;
+              margin-bottom: 35px;
+            }
 
-          .color-table {
-            background-color: $ecru_white;
-          }
-          tr {
+            &.form-group--error {
+              span {
+                display: block;
+                font-family: "Montserrat";
+                color: #ff1744;
+                margin-top: -28px;
+                font-size: 12px;
+              }
 
-            td {
-              padding: 15px 18px 24px;
+              label {
+                color: #ff1744;
+              }
+
+              input {
+                border-bottom: 1px solid #ff1744;
+                color: #ff1744;
+              }
+
+              textarea {
+                border-bottom: 1px solid #ff1744;
+                color: #ff1744;
+              }
 
             }
-          }
-        }
-        .payment-methods {
-          margin-top: 145px;
-          form {
 
             label {
               display: block;
@@ -115,16 +111,49 @@ body {
                 }
               }
             }
+
+            span {
+              display: none;
+            }
           }
+
+        }
+
+        input {
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 17px;
+          line-height: 140%;
+          letter-spacing: 0.32px;
+          border: none;
+          border-bottom: 1px solid $black;
+          max-width: 350px;
+        }
+      }
+      .right {
+        table {
+
+          .color-table {
+            background-color: $ecru_white;
+          }
+          tr {
+
+            td {
+              padding: 15px 18px 24px;
+
+            }
+          }
+        }
+        .payment-methods {
+          margin-top: 145px;
+
           button {
             margin-top: 47px;
           }
         }
-
       }
-
     }
-
   }
 
   @include footer;

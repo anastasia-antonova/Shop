@@ -385,6 +385,79 @@ textarea::placeholder {
   color: #868686;
 }
 
+.form-section {
+  margin-bottom: 81px;
+}
+.form-section .form-group input {
+  min-height: 35px;
+  min-width: 350px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 16px 0px;
+  margin-bottom: 35px;
+}
+.form-section .form-group.form-group--error span {
+  display: block;
+  font-family: "Montserrat";
+  color: #ff1744;
+  margin-top: -28px;
+  font-size: 12px;
+}
+.form-section .form-group.form-group--error label {
+  color: #ff1744;
+}
+.form-section .form-group.form-group--error input {
+  border-bottom: 1px solid #ff1744;
+  color: #ff1744;
+}
+.form-section .form-group.form-group--error textarea {
+  border-bottom: 1px solid #ff1744;
+  color: #ff1744;
+}
+.form-section .form-group label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.form-section .form-group label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.form-section .form-group label input:checked ~ .radiobutton1::after {
+  display: block;
+}
+.form-section .form-group label .radiobutton1 {
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border: 1px solid #000000;
+}
+.form-section .form-group label .radiobutton1::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 10px;
+  height: 10px;
+  background: #000000;
+  display: none;
+}
+.form-section .form-group span {
+  display: none;
+}
+
 /* other color*/
 /* other color*/
 body {
@@ -483,10 +556,10 @@ body .all-content .information .left textarea {
   line-height: 140%;
   letter-spacing: 0.32px;
 }
-body .all-content .information .left form {
+body .all-content .information .left .form-section {
   margin-bottom: 81px;
 }
-body .all-content .information .left form input {
+body .all-content .information .left .form-section .form-group input {
   min-height: 35px;
   min-width: 350px;
   display: block;
@@ -494,6 +567,66 @@ body .all-content .information .left form input {
   border-bottom: 1px solid #000000;
   padding: 16px 0px;
   margin-bottom: 35px;
+}
+body .all-content .information .left .form-section .form-group.form-group--error span {
+  display: block;
+  font-family: "Montserrat";
+  color: #ff1744;
+  margin-top: -28px;
+  font-size: 12px;
+}
+body .all-content .information .left .form-section .form-group.form-group--error label {
+  color: #ff1744;
+}
+body .all-content .information .left .form-section .form-group.form-group--error input {
+  border-bottom: 1px solid #ff1744;
+  color: #ff1744;
+}
+body .all-content .information .left .form-section .form-group.form-group--error textarea {
+  border-bottom: 1px solid #ff1744;
+  color: #ff1744;
+}
+body .all-content .information .left .form-section .form-group label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body .all-content .information .left .form-section .form-group label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+body .all-content .information .left .form-section .form-group label input:checked ~ .radiobutton1::after {
+  display: block;
+}
+body .all-content .information .left .form-section .form-group label .radiobutton1 {
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border: 1px solid #000000;
+}
+body .all-content .information .left .form-section .form-group label .radiobutton1::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 10px;
+  height: 10px;
+  background: #000000;
+  display: none;
+}
+body .all-content .information .left .form-section .form-group span {
+  display: none;
 }
 body .all-content .information .left input {
   font-family: "Raleway";
@@ -514,45 +647,6 @@ body .all-content .information .right table tr td {
 }
 body .all-content .information .right .payment-methods {
   margin-top: 145px;
-}
-body .all-content .information .right .payment-methods form label {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-body .all-content .information .right .payment-methods form label input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-body .all-content .information .right .payment-methods form label input:checked ~ .radiobutton1::after {
-  display: block;
-}
-body .all-content .information .right .payment-methods form label .radiobutton1 {
-  background-color: #FFFFFF;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 22px;
-  width: 22px;
-  border: 1px solid #000000;
-}
-body .all-content .information .right .payment-methods form label .radiobutton1::after {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  width: 10px;
-  height: 10px;
-  background: #000000;
-  display: none;
 }
 body .all-content .information .right .payment-methods button {
   margin-top: 47px;

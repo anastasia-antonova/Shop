@@ -6,7 +6,7 @@ function send() {
         const groups = form.querySelectorAll('.form-group');
         console.log(groups)
 
-        for (let a of groups) {
+        for (let a of groups){
             const input = a.querySelector('input');
             const textarea = a.querySelector('textarea')
             let required = false;
@@ -55,8 +55,8 @@ function send() {
                         if (textarea.value.length < 20) {
                             required = true;
                             a.classList.add('form-group--error');
-                            a.querySelector('.required').style = "display: block";
-
+                            a.querySelector('.required').style = "display: none";
+                            a.querySelector('.text-min').style = "display: block";
 
                         }
 
@@ -64,11 +64,13 @@ function send() {
                     if (!required && !minimum) {
                         a.classList.remove('form-group--error');
                         a.querySelector('.required').style = "display: none";
+                        a.querySelector('.text-min').style = "display: none";
+
 
                     }
                 }
             }
         }
-
     }
 }
+

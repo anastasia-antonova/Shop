@@ -349,3 +349,94 @@ textarea {
   }
 }
 
+.form-section {
+  margin-bottom: 81px;
+  .form-group {
+    input {
+      min-height: 35px;
+      min-width: 350px;
+      display: block;
+      border: none;
+      border-bottom: 1px solid $black;
+      padding: 16px 0px;
+      margin-bottom: 35px;
+    }
+
+    &.form-group--error {
+      span {
+        display: block;
+        font-family: "Montserrat";
+        color: #ff1744;
+        margin-top: -28px;
+        font-size: 12px;
+      }
+
+      label {
+        color: #ff1744;
+      }
+
+      input {
+        border-bottom: 1px solid #ff1744;
+        color: #ff1744;
+      }
+
+      textarea {
+        border-bottom: 1px solid #ff1744;
+        color: #ff1744;
+      }
+
+    }
+
+    label {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked ~ .radiobutton1 {
+          &::after {
+            display: block;
+          }
+        }
+      }
+
+      .radiobutton1 {
+        background-color: $white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        border: 1px solid $black;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 6px;
+          left: 6px;
+          width: 10px;
+          height: 10px;
+          background: $black;
+          display: none;
+        }
+      }
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+}
+
